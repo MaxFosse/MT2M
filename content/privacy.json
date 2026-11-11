@@ -1,0 +1,37 @@
+{
+  "title": "Politique de confidentialité",
+  "sections": [
+    {
+      "heading": "Responsable du traitement",
+      "body": "MT2M est responsable du traitement des données personnelles collectées sur ce site."
+    },
+    {
+      "heading": "Données collectées",
+      "body": "Lorsque vous utilisez le formulaire de contact, nous recueillons les informations que vous indiquez : nom, adresse e-mail, message, et si vous le souhaitez votre téléphone et la commune du chantier."
+    },
+    {
+      "heading": "Utilisation",
+      "body": "Ces informations servent uniquement à étudier et à répondre à votre demande de renseignements ou de devis. Elles ne sont jamais utilisées à des fins publicitaires."
+    },
+    {
+      "heading": "Base légale",
+      "body": "Le traitement repose sur notre intérêt légitime à répondre aux demandes reçues et, le cas échéant, sur les mesures précontractuelles prises à votre demande (article 6 du RGPD)."
+    },
+    {
+      "heading": "Durée de conservation",
+      "body": "Les données sont conservées le temps nécessaire au traitement de votre demande et de la relation qui peut en découler. [Durée exacte à confirmer.]"
+    },
+    {
+      "heading": "Destinataires",
+      "body": "Vos données sont accessibles uniquement à MT2M. Elles ne sont ni vendues ni cédées à des tiers. Le formulaire utilise EmailJS, un service d'envoi d'e-mails, dans le seul but de transmettre votre message à MT2M."
+    },
+    {
+      "heading": "Cookies",
+      "body": "Ce site n'utilise ni cookies publicitaires, ni outil de mesure d'audience."
+    },
+    {
+      "heading": "Vos droits",
+      "body": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition au traitement de vos données, ainsi que d'un droit à la portabilité."
+    }
+  ]
+}

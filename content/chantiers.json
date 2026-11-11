@@ -1,0 +1,223 @@
+{
+  "label": "Nos réalisations",
+  "h2": "Les chantiers de l'atelier.",
+  "lead": "Touchez un chantier pour découvrir son histoire et les photos des travaux : avant, pendant et après.",
+  "chantiers": [
+    {
+      "id": "pavillon-de-la-musique",
+      "titre": "Menuiseries du Pavillon de la Musique",
+      "lieu": "Pavillon de la Musique, centre diocésain",
+      "commune": "Besançon (Doubs)",
+      "architecte": "",
+      "couverture": "img/pavillon/apres-porte-exte.webp",
+      "resume": "Restauration des menuiseries anciennes et fabrication d'une porte vitrée pour un pavillon du XVIIIe siècle classé monument historique, au centre diocésain de Besançon.",
+      "contexte": "Le Pavillon de la Musique, dit Pavillon Michotey, est un pavillon du début du XVIIIe siècle situé au centre diocésain de Besançon. Il est classé monument historique depuis le 26 mars 2007. Ses menuiseries avaient beaucoup souffert du temps : châssis abîmés, panneaux dégradés, imposte à reprendre. L'objectif était de conserver tout ce qui pouvait l'être et de refaire à l'identique ce qui avait disparu.",
+      "travaux": [
+        "Imposte en éventail du fronton façonnée en atelier",
+        "Porte extérieure vitrée en verre soufflé, fabriquée à neuf",
+        "Porte intérieure moulurée réparée et reposée",
+        "Fenêtres à petits bois restaurées",
+        "Boiseries intérieures reprises et reposées"
+      ],
+      "ouvrages": [
+        {
+          "titre": "Fronton : imposte en éventail",
+          "texte": "L'imposte en éventail qui surmonte l'entrée a été entièrement façonnée en atelier, rayon par rayon, puis mise en place et vitrée.",
+          "etapes": [
+            { "etape": "pendant", "image": "img/pavillon/avant-fronton.webp", "legende": "Façonnage de l'éventail en atelier" },
+            { "etape": "pendant", "image": "img/pavillon/pendant-fronton.webp", "legende": "Détail de la dentelle en bois" },
+            { "etape": "apres", "image": "img/pavillon/apres-fronton.webp", "legende": "Imposte vitrée en place" }
+          ]
+        },
+        {
+          "titre": "Porte extérieure vitrée",
+          "texte": "Une porte-fenêtre neuve à petits bois, fabriquée en atelier selon les assemblages traditionnels et vitrée en verre soufflé.",
+          "etapes": [
+            { "etape": "pendant", "image": "img/pavillon/avant-porte-exte.webp", "legende": "Fabrication en atelier" },
+            { "etape": "apres", "image": "img/pavillon/apres-porte-exte.webp", "legende": "Porte posée, vue de l'intérieur" }
+          ]
+        },
+        {
+          "titre": "Porte intérieure moulurée",
+          "texte": "La porte d'origine a été déposée, réparée en atelier par greffes de bois, puis reposée dans sa boiserie.",
+          "etapes": [
+            { "etape": "avant", "image": "img/pavillon/avant-porte-inte.webp", "legende": "La porte avant restauration" },
+            { "etape": "pendant", "image": "img/pavillon/pendant-porte-inte.webp", "legende": "Détail d'une greffe de bois" },
+            { "etape": "pendant", "image": "img/pavillon/apres-porte-inte.webp", "legende": "Après réparation, en atelier" },
+            { "etape": "apres", "image": "img/pavillon/porte-inte-repose.webp", "legende": "La porte reposée" }
+          ]
+        },
+        {
+          "titre": "Fenêtres à petits bois",
+          "texte": "Les châssis anciens ont été repris en atelier puis reposés en façade.",
+          "etapes": [
+            { "etape": "avant", "image": "img/pavillon/fenetre-facade-avant.webp", "legende": "La façade avant travaux" },
+            { "etape": "pendant", "image": "img/pavillon/fenetre-facade-pendant.webp", "legende": "Châssis ancien en atelier" },
+            { "etape": "apres", "image": "img/pavillon/fenetre-facade-apres.webp", "legende": "Les fenêtres en façade" }
+          ]
+        },
+        {
+          "titre": "Boiseries intérieures",
+          "texte": "Les panneaux dégradés ont été restaurés en atelier, puis les boiseries reposées dans la salle.",
+          "etapes": [
+            { "etape": "avant", "image": "img/pavillon/revers-boiserie-inte.webp", "legende": "Revers d'un panneau dégradé" },
+            { "etape": "pendant", "image": "img/pavillon/panneau-moulure-boiserie-inte.webp", "legende": "Panneau mouluré en atelier" },
+            { "etape": "apres", "image": "img/pavillon/boiserie-apres.webp", "legende": "Les boiseries reposées" }
+          ]
+        }
+      ],
+      "galerie": []
+    },
+    {
+      "id": "eglise-saint-vincent",
+      "titre": "Boiseries de l'église Saint-Vincent",
+      "lieu": "Église Saint-Vincent",
+      "commune": "Avanne-Aveney (Doubs)",
+      "architecte": "Pierre Marnotte",
+      "couverture": "img/stvincent/apres-travaux.webp",
+      "resume": "Restauration des boiseries d'une église inscrite aux monuments historiques : balcon, oculi et éléments d'architecture.",
+      "contexte": "L'église Saint-Vincent d'Avanne-Aveney a été construite pour remplacer un ancien lieu de culte menacé ou détruit par les crues répétées du Doubs. Ses plans ont été conçus en 1826 par l'architecte Pierre Marnotte, et l'édifice a été achevé en 1831. Elle est inscrite aux monuments historiques depuis le 5 mars 1998. MT2M a démonté le balcon existant, puis l'a entièrement refabriqué selon les dispositions d'origine de l'architecte Pierre Marnotte. Les oculi, le fronton et la croix ont été fabriqués en atelier et intégrés à l'ensemble.",
+      "travaux": [
+        "Démontage du balcon existant",
+        "Refabrication du balcon selon les dispositions d'origine",
+        "Tournage des oculi au tour à bois",
+        "Fabrication du fronton et de la croix",
+        "Fabrication d'un chapiteau, élément de support et de décor"
+      ],
+      "ouvrages": [
+        {
+          "titre": "Balcon, oculi et éléments d'architecture",
+          "texte": "De l'état d'origine à l'ensemble restauré, en passant par l'atelier : chaque élément a été façonné selon le modèle d'origine.",
+          "etapes": [
+            { "etape": "avant", "image": "img/stvincent/avant-travaux.webp", "legende": "État d'origine du balcon et des boiseries" },
+            { "etape": "pendant", "image": "img/stvincent/tournage-de-loculus.webp", "legende": "Tournage de l'oculus : mise en forme des moulures au tour à bois" },
+            { "etape": "pendant", "image": "img/stvincent/fabrication-dun-chapiteau.webp", "legende": "Fabrication d'un chapiteau, réalisé en atelier" },
+            { "etape": "apres", "image": "img/stvincent/apres-travaux.webp", "legende": "Oculi, fronton et croix fabriqués et intégrés à l'ensemble" }
+          ]
+        }
+      ],
+      "galerie": []
+    },
+    {
+      "id": "maison-des-orphelins-dole",
+      "titre": "La Maison des Orphelins",
+      "lieu": "Maison des Orphelins",
+      "commune": "Dole (Jura)",
+      "architecte": "",
+      "couverture": "img/dole/fenetre/facades-cour-interieure.webp",
+      "resume": "Restauration des boiseries intérieures, d'environ 40 fenêtres et du plancher d'un monument historique de Dole.",
+      "contexte": "La Maison des Orphelins est un monument historique de Dole, dans le Jura. Elle a été fondée en 1691 par Jean-Ignace Froissard de Broissia pour venir en aide aux personnes fragiles et abriter de jeunes garçons orphelins. MT2M y a mené un chantier d'ampleur : décapage, restauration et fabrication à neuf des boiseries manquantes, restauration d'environ 40 fenêtres, et reprise du plancher dans le respect de l'existant.",
+      "travaux": [
+        "Décapage et restauration des boiseries intérieures",
+        "Relevé des couches de peinture (stratigraphie : 7 couches)",
+        "Fabrication à neuf des éléments manquants",
+        "Restauration d'environ 40 fenêtres, greffes et remastiquage",
+        "Changement de carreaux en verre soufflé, à l'identique",
+        "Remise en ordre des quincailleries, fermetures et réglages",
+        "Restauration du plancher"
+      ],
+      "ouvrages": [
+        {
+          "titre": "Boiseries intérieures",
+          "texte": "Décapage, restauration et fabrication à neuf des éléments manquants. Avant le décapage, un relevé des couches de peinture (stratigraphie) a mis au jour 7 couches successives.",
+          "etapes": [
+            { "etape": "avant", "image": "img/dole/boiserie/avant-travaux.webp", "legende": "La pièce avant travaux" },
+            { "etape": "avant", "image": "img/dole/boiserie/boiserie-origine-avant-decapage.webp", "legende": "Boiserie d'origine, sous ses couches de peinture" },
+            { "etape": "pendant", "image": "img/dole/boiserie/stratigraphie-peinture.webp", "legende": "Stratigraphie : relevé des 7 couches de peinture" },
+            { "etape": "pendant", "image": "img/dole/boiserie/panneaux-fabriques-en-atelier.webp", "legende": "Panneaux fabriqués à neuf en atelier" },
+            { "etape": "pendant", "image": "img/dole/boiserie/pose-des-panneaux-neufs.webp", "legende": "Pose des panneaux neufs à côté des anciens" },
+            { "etape": "apres", "image": "img/dole/boiserie/renovation-et-reconstruction-a-lidentique.webp", "legende": "Rénovation et reconstruction à l'identique" }
+          ]
+        },
+        {
+          "titre": "Environ 40 fenêtres",
+          "texte": "Pose de greffes et remplacement des pièces altérées, remastiquage des vitrages, changement de carreaux en verre soufflé, remise en ordre du fonctionnement et pose de joints.",
+          "etapes": [
+            { "etape": "avant", "image": "img/dole/fenetre/chassis-anciens-deposes.webp", "legende": "Châssis anciens déposés, à l'atelier" },
+            { "etape": "pendant", "image": "img/dole/fenetre/fenetre-demontee-en-atelier.webp", "legende": "Fenêtre démontée, prête à être assemblée" },
+            { "etape": "pendant", "image": "img/dole/fenetre/collage-et-serrage-a-letabli.webp", "legende": "Collage et serrage des pièces à l'établi" },
+            { "etape": "pendant", "image": "img/dole/fenetre/fenetre-restauree-en-atelier.webp", "legende": "Fenêtre restaurée, prête à la pose" },
+            { "etape": "apres", "image": "img/dole/fenetre/fenetre-replacee-en-facade.webp", "legende": "Fenêtre restaurée et replacée en façade" }
+          ]
+        },
+        {
+          "titre": "Le plancher",
+          "texte": "Dépose des lames dégradées, reprise des appuis et repose de lames en bois, dans le respect de l'existant.",
+          "etapes": [
+            { "etape": "pendant", "image": "img/dole/plancher/plancher-avant.webp", "legende": "Pendant la restauration : lames dégradées déposées" },
+            { "etape": "apres", "image": "img/dole/plancher/plancher-apres.webp", "legende": "Après restauration" }
+          ]
+        }
+      ],
+      "galerie": [
+        { "image": "img/dole/fenetre/facades-cour-interieure.webp", "legende": "Les fenêtres restaurées, dans la cour" },
+        { "image": "img/dole/fenetre/chassis-en-cours-dassemblage.webp", "legende": "Châssis en cours d'assemblage" },
+        { "image": "img/dole/boiserie/panneaux-origine-et-bas-neufs.webp", "legende": "Panneaux d'origine et parties basses neuves" },
+        { "image": "img/dole/boiserie/panneaux-bas-refaits-a-neuf.webp", "legende": "Panneaux bas refaits à neuf" },
+        { "image": "img/dole/boiserie/raccord-ancien-et-neuf.webp", "legende": "Raccord entre boiserie ancienne et éléments neufs" },
+        { "image": "img/dole/boiserie/habillage-de-porte.webp", "legende": "Habillage de porte restauré" },
+        { "image": "img/dole/boiserie/chantier-en-cours.webp", "legende": "Le chantier en cours" }
+      ]
+    },
+    {
+      "id": "villers-sous-chalamont",
+      "titre": "Boiseries de la chapelle Notre-Dame-des-Bois",
+      "lieu": "Chapelle Notre-Dame-des-Bois",
+      "commune": "Villers-sous-Chalamont (Doubs)",
+      "architecte": "",
+      "couverture": "img/villers/apres.webp",
+      "resume": "Conserver le bois ancien, réparer les parties abîmées et remettre les panneaux en place.",
+      "contexte": "La chapelle Notre-Dame-des-Bois, aussi appelée la Mère Église, est un édifice religieux médiéval de Villers-sous-Chalamont, dans le Doubs. Elle a été construite au XIIe siècle, vers 1158, lorsque Gaucher III, sire de Salins, céda des terres aux moines de l'abbaye d'Abondance, de l'ordre de Saint-Augustin, pour défricher la région. Les boiseries basses de la chapelle étaient attaquées par l'humidité, surtout en pied. Plutôt que de les remplacer, elles ont été déposées, restaurées en atelier puis reposées : le bois d'origine est conservé partout où c'est possible.",
+      "travaux": [
+        "Dépose soignée des panneaux",
+        "Greffes de bois sur les parties abîmées",
+        "Assemblages traditionnels à queue d'aronde, chevillés",
+        "Repose des boiseries dans la chapelle"
+      ],
+      "ouvrages": [
+        {
+          "titre": "Les boiseries de la chapelle",
+          "texte": "Du chantier au panneau fini : dépose, réparation en atelier, puis repose.",
+          "etapes": [
+            { "etape": "avant", "image": "img/villers/avant.webp", "legende": "Les boiseries avant restauration" },
+            { "etape": "pendant", "image": "img/villers/pendant.webp", "legende": "Les panneaux en atelier" },
+            { "etape": "apres", "image": "img/villers/apres.webp", "legende": "Les boiseries après repose" }
+          ]
+        }
+      ],
+      "galerie": []
+    },
+    {
+      "id": "moulin-de-pont-des-vents",
+      "titre": "La porte du Moulin de Pont des Vents",
+      "lieu": "Moulin de Pont des Vents",
+      "commune": "Montfleur (Jura)",
+      "architecte": "",
+      "couverture": "img/moulinmontfleur/porte-posee-vue-exte.webp",
+      "resume": "Fabrication traditionnelle d'une porte en bois massif, en planches croisées clouées et agrafées, pour un moulin inscrit aux monuments historiques.",
+      "contexte": "Le Moulin de Pont des Vents est un moulin à eau fonctionnant sur le Suran, situé à proximité immédiate du pont des Vents à Montfleur, dans le Jura. Il est inscrit au titre des monuments historiques depuis 1996. MT2M y a fabriqué une porte neuve selon une technique traditionnelle : deux épaisseurs de planches croisées, avec un motif en chevrons, assemblées par clouage et agrafage. La porte a été préparée à l'atelier puis posée dans le respect du caractère du moulin.",
+      "travaux": [
+        "Fabrication traditionnelle d'une porte en bois massif",
+        "Deux épaisseurs de planches croisées, avec motif en chevrons",
+        "Assemblage par clouage et agrafage",
+        "Préparation et mise en œuvre à l'atelier",
+        "Pose dans le respect du caractère du moulin"
+      ],
+      "ouvrages": [
+        {
+          "titre": "Une porte en planches croisées",
+          "texte": "Du calepinage des planches à la pose : toutes les étapes de la fabrication.",
+          "etapes": [
+            { "etape": "pendant", "image": "img/moulinmontfleur/calepinage-planche.webp", "legende": "Calepinage des planches croisées" },
+            { "etape": "pendant", "image": "img/moulinmontfleur/clouage-en-atelier.webp", "legende": "Clouage en atelier" },
+            { "etape": "pendant", "image": "img/moulinmontfleur/detail-des-clous.webp", "legende": "Détail des clous" },
+            { "etape": "pendant", "image": "img/moulinmontfleur/mise-en-place-des-fixations.webp", "legende": "Mise en place des fixations" },
+            { "etape": "apres", "image": "img/moulinmontfleur/porte-posee-vue-exte.webp", "legende": "Porte posée, vue extérieure" },
+            { "etape": "apres", "image": "img/moulinmontfleur/porte-posee-vue-inte.webp", "legende": "Porte posée, vue intérieure" }
+          ]
+        }
+      ],
+      "galerie": []
+    }
+  ]
+}

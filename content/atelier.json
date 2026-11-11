@@ -1,0 +1,66 @@
+{
+  "label": "L'entreprise et l'atelier",
+  "h2": "Un atelier artisanal au service du patrimoine.",
+  "presentation": {
+    "paragraphes": [
+      "MT2M est une entreprise artisanale de menuiserie et d'ébénisterie, installée à Myon dans le Doubs et dirigée par Florent Martin.",
+      "L'entreprise s'est spécialisée dans la restauration et la conservation des ouvrages en bois du bâti ancien : fenêtres, portes, boiseries, parquets et ouvrages d'ébénisterie.",
+      "Une grande partie du travail se fait à l'atelier : les ouvrages y sont démontés, réparés, complétés puis remontés avant d'être reposés. Quand un élément a disparu, il est fabriqué à neuf, selon les techniques traditionnelles."
+    ],
+    "image": "img/pavillon/avant-porte-exte.webp",
+    "legende": "Une porte vitrée en cours de fabrication à l'atelier"
+  },
+  "parcours": {
+    "label": "Le parcours",
+    "h3": "Florent Martin, menuisier-ébéniste.",
+    "etapes": [
+      {
+        "titre": "Menuiserie et ébénisterie",
+        "texte": "Formation et expérience aux métiers du bois : menuiserie, ébénisterie et techniques d'assemblage traditionnelles.",
+        "lien_texte": "",
+        "lien_url": ""
+      },
+      {
+        "titre": "Aux côtés de Philippe Bulle",
+        "texte": "Expérience auprès de Philippe Bulle, maître menuisier d'art spécialisé dans la restauration des monuments historiques.",
+        "lien_texte": "Philippe Bulle",
+        "lien_url": "https://www.philippe-bulle.fr/"
+      },
+      {
+        "titre": "La création de MT2M",
+        "texte": "Installation de l'atelier à Myon et chantiers de restauration dans toute la Bourgogne-Franche-Comté.",
+        "lien_texte": "",
+        "lien_url": ""
+      }
+    ]
+  },
+  "techniques": {
+    "label": "Le travail en atelier",
+    "items": [
+      {
+        "titre": "La greffe",
+        "texte": "On découpe uniquement la partie abîmée et on la remplace par une pièce de bois neuf, ajustée et collée. Le reste de l'ouvrage reste d'origine.",
+        "image": "img/pavillon/pendant-porte-inte.webp"
+      },
+      {
+        "titre": "L'assemblage",
+        "texte": "Tenons, mortaises, queues d'aronde, chevilles : les pièces sont assemblées comme autrefois, pour durer.",
+        "image": "img/dole/fenetre/chassis-en-cours-dassemblage.webp"
+      },
+      {
+        "titre": "La fabrication",
+        "texte": "Quand un ouvrage a disparu, il est refait à neuf : relevé des profils, choix du bois, façonnage et ajustement sur place.",
+        "image": "img/stvincent/fabrication-dun-chapiteau.webp"
+      }
+    ]
+  },
+  "principes": {
+    "citation": "Conserver d'abord. Réparer ce qui peut l'être. Refaire à l'identique ce qui a disparu.",
+    "items": [
+      { "titre": "Observer", "texte": "Comprendre comment l'ouvrage a été fait, à quelle époque, et ce qui l'a abîmé." },
+      { "titre": "Conserver", "texte": "Garder le maximum de bois et d'éléments d'origine." },
+      { "titre": "Réparer", "texte": "Greffes, consolidations et assemblages traditionnels, sans dénaturer." },
+      { "titre": "Restituer", "texte": "Refaire à l'identique uniquement ce qui a disparu ou ne peut être sauvé." }
+    ]
+  }
+}

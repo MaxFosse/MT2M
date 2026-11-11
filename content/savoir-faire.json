@@ -1,0 +1,49 @@
+{
+  "label": "Nos savoir-faire",
+  "h2": "Tous les ouvrages en bois du bâti ancien.",
+  "lead": "De la simple réparation à la fabrication complète, chaque intervention respecte les matériaux et les techniques d'origine.",
+  "items": [
+    {
+      "titre": "Fenêtres, portes et menuiseries anciennes",
+      "texte": "Une fenêtre ancienne se répare presque toujours. Nous reprenons les châssis, les petits bois et les portes moulurées.",
+      "points": ["Restauration des châssis et des petits bois", "Remastiquage et carreaux en verre soufflé", "Remise en ordre des ferrures et fermetures"],
+      "image": "img/dole/fenetre/fenetre-demontee-en-atelier.webp",
+      "legende": "Fenêtre démontée, prête à être assemblée à l'atelier"
+    },
+    {
+      "titre": "Boiseries et ouvrages d'ébénisterie",
+      "texte": "Lambris, panneaux moulurés, éléments décoratifs : nous les restaurons dans le respect de leurs profils et de leurs assemblages.",
+      "points": ["Boiseries murales et lambris", "Panneaux moulurés", "Décapage et relevé des couches de peinture"],
+      "image": "img/dole/boiserie/renovation-et-reconstruction-a-lidentique.webp",
+      "legende": "Boiseries de la Maison des Orphelins, à Dole"
+    },
+    {
+      "titre": "Parquets et planchers anciens",
+      "texte": "Les planchers d'époque peuvent être conservés : on remplace les lames abîmées et on garde le bois d'origine.",
+      "points": ["Dépose des lames dégradées", "Reprise des appuis", "Repose de lames dans le respect de l'existant"],
+      "image": "img/dole/plancher/plancher-apres.webp",
+      "legende": "Plancher restauré à la Maison des Orphelins, à Dole"
+    },
+    {
+      "titre": "Greffes et assemblages traditionnels",
+      "texte": "On retire uniquement le bois malade et on le remplace par une greffe de bois neuf, assemblée à l'ancienne.",
+      "points": ["Greffes et entures", "Tenons, mortaises, queues d'aronde, chevilles", "Un maximum de bois d'origine conservé"],
+      "image": "img/villers/pendant.webp",
+      "legende": "Panneaux de boiserie repris à l'atelier"
+    },
+    {
+      "titre": "Restitution à l'identique",
+      "texte": "Quand un élément a disparu, nous le refaisons d'après le modèle d'origine : relevé des profils, façonnage, ajustement.",
+      "points": ["Relevé des profils et moulures", "Tournage et façonnage en atelier", "Fabrication à neuf d'ouvrages complets"],
+      "image": "img/stvincent/tournage-de-loculus.webp",
+      "legende": "Tournage d'un oculus pour l'église Saint-Vincent"
+    },
+    {
+      "titre": "Édifices patrimoniaux et monuments",
+      "texte": "Chapelles, églises, demeures et bâtiments anciens : nous travaillons avec les propriétaires, les communes et les architectes.",
+      "points": ["Chapelles et églises", "Bâtiments et demeures historiques", "Monuments historiques"],
+      "image": "img/villers/apres.webp",
+      "legende": "Chapelle Notre-Dame-des-Bois, Villers-sous-Chalamont"
+    }
+  ]
+}

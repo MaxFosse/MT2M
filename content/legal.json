@@ -1,0 +1,25 @@
+{
+  "title": "Mentions légales",
+  "sections": [
+    {
+      "heading": "Éditeur du site",
+      "body": "Ce site est édité par MT2M, entreprise artisanale de menuiserie et d'ébénisterie du patrimoine.\n\nResponsable de la publication : Florent Martin, gérant\nAdresse : 4 rue du Colombier, 25440 Myon, France\nTéléphone : 06 84 78 99 84\nSIRET : 527 956 551 00016"
+    },
+    {
+      "heading": "Conception et réalisation",
+      "body": "Ce site est conçu et réalisé par :\n Max Fosse, développeur web front-end freelance\nwww.maxfosse.fr"
+    },
+    {
+      "heading": "Hébergement",
+      "body": "Ce site est hébergé par :\n\n[Nom de l'hébergeur]\n[Adresse de l'hébergeur]"
+    },
+    {
+      "heading": "Propriété intellectuelle",
+      "body": "L'ensemble du contenu de ce site (textes, photographies, logo et identité visuelle) est la propriété de MT2M et est protégé par le droit de la propriété intellectuelle. Toute reproduction, diffusion ou utilisation sans autorisation écrite préalable est interdite."
+    },
+    {
+      "heading": "Liens externes",
+      "body": "Ce site peut contenir des liens vers des sites tiers. MT2M ne peut être tenu responsable de leur contenu ni de leurs pratiques."
+    }
+  ]
+}

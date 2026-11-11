@@ -1,0 +1,257 @@
+# ════════════════════════════════════════════════════════
+#  MT2M (Configuration Sveltia CMS)
+#  Accès : https://www.mt2m.fr/admin/
+# ════════════════════════════════════════════════════════
+
+backend:
+  name: github
+  repo: MaxFosse/MT2M        # À ADAPTER au dépôt GitHub du site
+  branch: main
+  auth_type: token
+
+media_folder: img/chantiers
+public_folder: img/chantiers
+
+# Les photos envoyées sont converties automatiquement en WebP et réduites
+media_libraries:
+  default:
+    config:
+      max_file_size: 25000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1800
+          height: 1800
+
+locale: fr
+
+collections:
+
+  # ══════════════════════════════════════════
+  #  CHANTIERS (le plus utilisé)
+  # ══════════════════════════════════════════
+  - name: chantiers
+    label: "🪵 Mes chantiers"
+    files:
+      - name: chantiers
+        label: "Réalisations et fiches chantier"
+        file: content/chantiers.json
+        fields:
+          - { name: label, label: "Petit titre de la rubrique", widget: string }
+          - { name: h2, label: "Grand titre de la rubrique", widget: string }
+          - { name: lead, label: "Texte d'introduction", widget: text }
+          - name: chantiers
+            label: "Chantiers"
+            label_singular: "chantier"
+            widget: list
+            summary: "{{fields.titre}} · {{fields.commune}}"
+            hint: "L'ordre de cette liste est l'ordre d'affichage sur le site. Faites glisser pour réorganiser."
+            fields:
+              - name: id
+                label: "Identifiant (adresse de la fiche)"
+                widget: string
+                pattern: ['^[a-z0-9-]+$', "Uniquement des minuscules, des chiffres et des tirets, sans accent. Ex : eglise-saint-vincent"]
+                hint: "Ne le changez plus une fois le chantier publié (les liens partagés ne marcheraient plus)."
+              - { name: titre, label: "Titre du chantier", widget: string, hint: "Ex : Boiseries de la chapelle Notre-Dame-des-Bois" }
+              - { name: lieu, label: "Lieu / bâtiment", widget: string, required: false }
+              - { name: commune, label: "Commune (département)", widget: string, required: false, hint: "Ex : Dole (Jura)" }
+              - { name: architecte, label: "Architecte de l'édifice", widget: string, required: false, hint: "Laisser vide si non concerné" }
+              - { name: couverture, label: "Photo principale", widget: image, hint: "La plus belle photo du chantier terminé." }
+              - { name: resume, label: "Résumé (une ou deux phrases)", widget: text }
+              - { name: contexte, label: "Le contexte", widget: text, required: false }
+              - name: travaux
+                label: "Travaux réalisés"
+                label_singular: "ligne"
+                widget: list
+                required: false
+                field: { name: travail, label: "Travail réalisé", widget: string }
+              - name: ouvrages
+                label: "Ouvrages (photos avant / pendant / après)"
+                label_singular: "ouvrage"
+                widget: list
+                summary: "{{fields.titre}}"
+                hint: "Un ouvrage = une fenêtre, une porte, une boiserie… Chacun a sa suite de photos, dans l'ordre."
+                fields:
+                  - { name: titre, label: "Nom de l'ouvrage", widget: string }
+                  - { name: texte, label: "Courte explication", widget: text, required: false }
+                  - name: etapes
+                    label: "Photos, dans l'ordre"
+                    label_singular: "photo"
+                    widget: list
+                    summary: "{{fields.etape}} · {{fields.legende}}"
+                    fields:
+                      - name: etape
+                        label: "Étape"
+                        widget: select
+                        options:
+                          - { label: "Avant", value: avant }
+                          - { label: "Pendant", value: pendant }
+                          - { label: "Après", value: apres }
+                      - { name: image, label: "Photo", widget: image }
+                      - { name: legende, label: "Légende", widget: string }
+              - name: galerie
+                label: "Autres photos du chantier"
+                label_singular: "photo"
+                widget: list
+                required: false
+                fields:
+                  - { name: image, label: "Photo", widget: image }
+                  - { name: legende, label: "Légende", widget: string }
+
+  # ══════════════════════════════════════════
+  #  PAGES
+  # ══════════════════════════════════════════
+  - name: pages
+    label: "📄 Textes du site"
+    files:
+
+      - name: accueil
+        label: "Accueil"
+        file: content/accueil.json
+        fields:
+          - name: hero
+            label: "Premier écran"
+            widget: object
+            fields:
+              - { name: label, label: "Petite ligne au-dessus du titre", widget: string }
+              - { name: h1, label: "Grand titre (début)", widget: string }
+              - { name: h1_italique, label: "Grand titre (fin, en italique)", widget: string }
+              - { name: lead, label: "Texte d'accroche", widget: text }
+              - { name: cta_primary, label: "Bouton principal", widget: string }
+              - { name: cta_secondary, label: "Bouton secondaire", widget: string }
+              - { name: image, label: "Grande photo (format portrait)", widget: image }
+              - { name: image_alt, label: "Description de la photo (pour Google et les malvoyants)", widget: string }
+              - { name: etiquette_titre, label: "Étiquette : titre", widget: string }
+              - { name: etiquette_lieu, label: "Étiquette : lieu", widget: string }
+          - name: domaines
+            label: "Domaines (bandeau sous le premier écran)"
+            widget: list
+            fields:
+              - { name: nom, label: "Nom", widget: string }
+              - name: icone
+                label: "Pictogramme"
+                widget: select
+                options: [fenetre, porte, boiserie, parquet, ebenisterie]
+          - name: vitrine
+            label: "Chantier mis en avant (étape par étape)"
+            widget: object
+            fields:
+              - { name: label, label: "Petit titre", widget: string }
+              - { name: h2, label: "Titre", widget: string }
+              - { name: lead, label: "Texte", widget: text }
+              - { name: chantier, label: "Identifiant du chantier", widget: string, hint: "Ex : pavillon-de-la-musique" }
+              - { name: ouvrage, label: "Numéro de l'ouvrage dans ce chantier", widget: number, value_type: int, min: 1 }
+
+      - name: savoir-faire
+        label: "Savoir-faire"
+        file: content/savoir-faire.json
+        fields:
+          - { name: label, label: "Petit titre", widget: string }
+          - { name: h2, label: "Grand titre", widget: string }
+          - { name: lead, label: "Introduction", widget: text }
+          - name: items
+            label: "Savoir-faire"
+            label_singular: "savoir-faire"
+            widget: list
+            summary: "{{fields.titre}}"
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - { name: texte, label: "Texte", widget: text }
+              - { name: points, label: "Points clés", widget: list, field: { name: point, label: "Point", widget: string } }
+              - { name: image, label: "Photo", widget: image, required: false }
+              - { name: legende, label: "Légende de la photo", widget: string }
+
+      - name: atelier
+        label: "L'entreprise et l'atelier"
+        file: content/atelier.json
+        fields:
+          - { name: label, label: "Petit titre", widget: string }
+          - { name: h2, label: "Grand titre", widget: string }
+          - name: presentation
+            label: "Présentation"
+            widget: object
+            fields:
+              - { name: paragraphes, label: "Paragraphes", widget: list, field: { name: paragraphe, label: "Paragraphe", widget: text } }
+              - { name: image, label: "Photo", widget: image }
+              - { name: legende, label: "Légende", widget: string }
+          - name: parcours
+            label: "Parcours de Florent"
+            widget: object
+            fields:
+              - { name: label, label: "Petit titre", widget: string }
+              - { name: h3, label: "Titre", widget: string }
+              - name: etapes
+                label: "Étapes"
+                widget: list
+                summary: "{{fields.titre}}"
+                fields:
+                  - { name: titre, label: "Titre", widget: string }
+                  - { name: texte, label: "Texte", widget: text }
+                  - { name: lien_texte, label: "Mot à transformer en lien (facultatif)", widget: string, required: false, hint: "Doit apparaître tel quel dans le texte. Ex : Philippe Bulle" }
+                  - { name: lien_url, label: "Adresse du lien (facultatif)", widget: string, required: false }
+          - name: techniques
+            label: "Techniques"
+            widget: object
+            fields:
+              - { name: label, label: "Petit titre", widget: string }
+              - name: items
+                label: "Techniques"
+                widget: list
+                fields:
+                  - { name: titre, label: "Titre", widget: string }
+                  - { name: texte, label: "Texte", widget: text }
+                  - { name: image, label: "Photo", widget: image }
+          - name: principes
+            label: "Notre approche"
+            widget: object
+            fields:
+              - { name: citation, label: "Citation", widget: text }
+              - name: items
+                label: "Principes"
+                widget: list
+                fields:
+                  - { name: titre, label: "Titre", widget: string }
+                  - { name: texte, label: "Texte", widget: text }
+
+      - name: contact
+        label: "Coordonnées"
+        file: content/contact.json
+        fields:
+          - { name: telephone, label: "Téléphone", widget: string, hint: "Format : 06 84 78 99 84" }
+          - { name: email, label: "E-mail", widget: string }
+          - { name: gerant, label: "Nom et fonction", widget: string }
+          - { name: adresse, label: "Adresse", widget: string }
+          - { name: ville, label: "Code postal et ville", widget: string }
+          - { name: zone, label: "Zone d'intervention", widget: text }
+
+  # ══════════════════════════════════════════
+  #  LÉGAL
+  # ══════════════════════════════════════════
+  - name: legal
+    label: "⚖️ Mentions légales"
+    files:
+      - name: legal
+        label: "Mentions légales"
+        file: content/legal.json
+        fields:
+          - { name: title, label: "Titre", widget: string }
+          - name: sections
+            label: "Rubriques"
+            widget: list
+            summary: "{{fields.heading}}"
+            fields:
+              - { name: heading, label: "Titre de la rubrique", widget: string }
+              - { name: body, label: "Texte", widget: text }
+      - name: privacy
+        label: "Politique de confidentialité"
+        file: content/privacy.json
+        fields:
+          - { name: title, label: "Titre", widget: string }
+          - name: sections
+            label: "Rubriques"
+            widget: list
+            summary: "{{fields.heading}}"
+            fields:
+              - { name: heading, label: "Titre de la rubrique", widget: string }
+              - { name: body, label: "Texte", widget: text }

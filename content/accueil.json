@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "label": "Menuiserie · Ébénisterie du patrimoine",
+    "h1": "Restaurer et fabriquer",
+    "h1_italique": "dans le respect du bâti ancien.",
+    "lead": "MT2M est un atelier artisanal installé à Myon, dans le Doubs. Nous restaurons les fenêtres, portes, boiseries et parquets anciens, et fabriquons à neuf selon les techniques traditionnelles.",
+    "cta_primary": "Voir nos réalisations",
+    "cta_secondary": "Demander un devis",
+    "image": "img/stvincent/apres-travaux.webp",
+    "image_alt": "Porte, oculi et fronton en bois restaurés dans l'église Saint-Vincent d'Avanne-Aveney",
+    "etiquette_titre": "Église Saint-Vincent",
+    "etiquette_lieu": "Avanne-Aveney"
+  },
+  "domaines": [
+    { "nom": "Fenêtres", "icone": "fenetre" },
+    { "nom": "Portes", "icone": "porte" },
+    { "nom": "Boiseries", "icone": "boiserie" },
+    { "nom": "Parquets", "icone": "parquet" },
+    { "nom": "Ébénisterie", "icone": "ebenisterie" }
+  ],
+  "vitrine": {
+    "label": "Un chantier, étape par étape",
+    "h2": "De la porte abîmée à la porte reposée.",
+    "lead": "Cette porte du Pavillon de la Musique, à Besançon, a été déposée, réparée en atelier par greffes de bois, puis remise à sa place. Le bois d'origine a été conservé.",
+    "chantier": "pavillon-de-la-musique",
+    "ouvrage": 3
+  }
+}
