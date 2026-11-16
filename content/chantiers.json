@@ -1,5 +1,5 @@
 {
-  "label": "Nos réalisations",
+  "label": "Réalisations",
   "h2": "Les chantiers de l'atelier.",
   "lead": "Touchez un chantier pour découvrir son histoire et les photos des travaux : avant, pendant et après.",
   "chantiers": [
@@ -70,29 +70,29 @@
     },
     {
       "id": "eglise-saint-vincent",
-      "titre": "Boiseries de l'église Saint-Vincent",
+      "titre": "Restitution du décor en bois de l'église Saint-Vincent",
       "lieu": "Église Saint-Vincent",
       "commune": "Avanne-Aveney (Doubs)",
       "architecte": "Pierre Marnotte",
       "couverture": "img/stvincent/apres-travaux.webp",
-      "resume": "Restauration des boiseries d'une église inscrite aux monuments historiques : balcon, oculi et éléments d'architecture.",
-      "contexte": "L'église Saint-Vincent d'Avanne-Aveney a été construite pour remplacer un ancien lieu de culte menacé ou détruit par les crues répétées du Doubs. Ses plans ont été conçus en 1826 par l'architecte Pierre Marnotte, et l'édifice a été achevé en 1831. Elle est inscrite aux monuments historiques depuis le 5 mars 1998. MT2M a démonté le balcon existant, puis l'a entièrement refabriqué selon les dispositions d'origine de l'architecte Pierre Marnotte. Les oculi, le fronton et la croix ont été fabriqués en atelier et intégrés à l'ensemble.",
+      "resume": "Restitution du décor en bois d'une église inscrite aux monuments historiques, refabriqué tel que l'architecte Pierre Marnotte l'avait dessiné.",
+      "contexte": "L'église Saint-Vincent d'Avanne-Aveney a été construite pour remplacer un ancien lieu de culte menacé ou détruit par les crues répétées du Doubs. Ses plans ont été conçus en 1826 par l'architecte Pierre Marnotte, et l'édifice a été achevé en 1831. Elle est inscrite aux monuments historiques depuis le 5 mars 1998. Le chantier a porté sur la restitution du décor en bois de l'église : le décor a été refabriqué tel que l'architecte Pierre Marnotte l'avait dessiné à l'époque. Le balcon existant a été démonté, puis entièrement refabriqué ; les oculi, le fronton et la croix ont été fabriqués en atelier et intégrés à l'ensemble.",
       "travaux": [
         "Démontage du balcon existant",
-        "Refabrication du balcon selon les dispositions d'origine",
+        "Restitution du décor en bois selon les dessins de Pierre Marnotte",
         "Tournage des oculi au tour à bois",
         "Fabrication du fronton et de la croix",
         "Fabrication d'un chapiteau, élément de support et de décor"
       ],
       "ouvrages": [
         {
-          "titre": "Balcon, oculi et éléments d'architecture",
-          "texte": "De l'état d'origine à l'ensemble restauré, en passant par l'atelier : chaque élément a été façonné selon le modèle d'origine.",
+          "titre": "Le décor en bois : balcon, oculi et éléments d'architecture",
+          "texte": "De l'état d'origine au décor restitué, en passant par l'atelier : chaque élément a été refabriqué tel que l'architecte Pierre Marnotte l'avait dessiné.",
           "etapes": [
             { "etape": "avant", "image": "img/stvincent/avant-travaux.webp", "legende": "État d'origine du balcon et des boiseries" },
             { "etape": "pendant", "image": "img/stvincent/tournage-de-loculus.webp", "legende": "Tournage de l'oculus : mise en forme des moulures au tour à bois" },
             { "etape": "pendant", "image": "img/stvincent/fabrication-dun-chapiteau.webp", "legende": "Fabrication d'un chapiteau, réalisé en atelier" },
-            { "etape": "apres", "image": "img/stvincent/apres-travaux.webp", "legende": "Oculi, fronton et croix fabriqués et intégrés à l'ensemble" }
+            { "etape": "apres", "image": "img/stvincent/apres-travaux.webp", "legende": "Le décor en bois restitué : oculi, fronton et croix intégrés à l'ensemble" }
           ]
         }
       ],
@@ -105,15 +105,16 @@
       "commune": "Dole (Jura)",
       "architecte": "",
       "couverture": "img/dole/fenetre/facades-cour-interieure.webp",
-      "resume": "Restauration des boiseries intérieures, d'environ 40 fenêtres et du plancher d'un monument historique de Dole.",
-      "contexte": "La Maison des Orphelins est un monument historique de Dole, dans le Jura. Elle a été fondée en 1691 par Jean-Ignace Froissard de Broissia pour venir en aide aux personnes fragiles et abriter de jeunes garçons orphelins. MT2M y a mené un chantier d'ampleur : décapage, restauration et fabrication à neuf des boiseries manquantes, restauration d'environ 40 fenêtres, et reprise du plancher dans le respect de l'existant.",
+      "resume": "Restauration des boiseries intérieures, de toutes les fenêtres des différentes époques et du plancher d'un monument historique de Dole.",
+      "contexte": "La Maison des Orphelins est un monument historique de Dole, dans le Jura. Elle a été fondée en 1691 par Jean-Ignace Froissard de Broissia pour venir en aide aux personnes fragiles et abriter de jeunes garçons orphelins. MT2M y a mené un chantier d'ampleur : décapage, restauration et fabrication à neuf des boiseries manquantes, restauration de toutes les fenêtres des différentes époques, et reprise du plancher dans le respect de l'existant.",
       "travaux": [
         "Décapage et restauration des boiseries intérieures",
         "Relevé des couches de peinture (stratigraphie : 7 couches)",
         "Fabrication à neuf des éléments manquants",
-        "Restauration d'environ 40 fenêtres, greffes et remastiquage",
+        "Restauration de toutes les fenêtres des différentes époques",
+        "Greffes et mastiquage à l'ancienne des carreaux",
         "Changement de carreaux en verre soufflé, à l'identique",
-        "Remise en ordre des quincailleries, fermetures et réglages",
+        "Remise en fonctionnement des quincailleries métalliques",
         "Restauration du plancher"
       ],
       "ouvrages": [
@@ -130,8 +131,8 @@
           ]
         },
         {
-          "titre": "Environ 40 fenêtres",
-          "texte": "Pose de greffes et remplacement des pièces altérées, remastiquage des vitrages, changement de carreaux en verre soufflé, remise en ordre du fonctionnement et pose de joints.",
+          "titre": "Les fenêtres des différentes époques",
+          "texte": "Restauration de toutes les fenêtres des différentes époques : pose de greffes et remplacement des pièces altérées, mastiquage des vitrages, changement de carreaux en verre soufflé, remise en fonctionnement des quincailleries et pose de joints.",
           "etapes": [
             { "etape": "avant", "image": "img/dole/fenetre/chassis-anciens-deposes.webp", "legende": "Châssis anciens déposés, à l'atelier" },
             { "etape": "pendant", "image": "img/dole/fenetre/fenetre-demontee-en-atelier.webp", "legende": "Fenêtre démontée, prête à être assemblée" },
@@ -171,16 +172,19 @@
       "travaux": [
         "Dépose soignée des panneaux",
         "Greffes de bois sur les parties abîmées",
-        "Assemblages traditionnels à queue d'aronde, chevillés",
+        "Assemblages à clef en queue d'aronde, chevillés",
         "Repose des boiseries dans la chapelle"
       ],
       "ouvrages": [
         {
           "titre": "Les boiseries de la chapelle",
-          "texte": "Du chantier au panneau fini : dépose, réparation en atelier, puis repose.",
+          "texte": "Du chantier au panneau fini : dépose, greffes et assemblages en atelier, puis repose.",
           "etapes": [
             { "etape": "avant", "image": "img/villers/avant.webp", "legende": "Les boiseries avant restauration" },
+            { "etape": "avant", "image": "img/villers/atelier.webp", "legende": "Pièces dégradées, déposées à l'atelier" },
             { "etape": "pendant", "image": "img/villers/pendant.webp", "legende": "Les panneaux en atelier" },
+            { "etape": "pendant", "image": "img/villers/atelier-2.webp", "legende": "Préparation des greffes, panneau par panneau" },
+            { "etape": "pendant", "image": "img/villers/assemblage-queue-daronde-chevillee.webp", "legende": "Assemblage à clef en queue d'aronde, chevillé" },
             { "etape": "apres", "image": "img/villers/apres.webp", "legende": "Les boiseries après repose" }
           ]
         }
