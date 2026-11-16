@@ -12,8 +12,8 @@
 <!-- ══════════════════════════════════════════
      SEO CORE
 ══════════════════════════════════════════ -->
-<title>MT2M - Menuiserie &amp; Ébénisterie du Patrimoine | Restauration de menuiseries anciennes</title>
-<meta name="description" content="MT2M, atelier de menuiserie et d'ébénisterie du patrimoine à Myon (Doubs). Restauration de fenêtres, portes, boiseries et parquets anciens en Bourgogne-Franche-Comté.">
+<title>MT2M - Menuiserie &amp; Ébénisterie du Patrimoine</title>
+<meta name="description" content="MT2M, menuiserie et ébénisterie du patrimoine. Atelier à Avanne-Aveney, près de Besançon (Doubs). Restauration de fenêtres, portes, boiseries et parquets anciens en Bourgogne-Franche-Comté.">
 <meta name="author" content="MT2M">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="theme-color" content="#22242A">
@@ -60,6 +60,17 @@
         "postalCode": "25440",
         "addressLocality": "Myon",
         "addressCountry": "FR"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Atelier MT2M",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "48 rue Saint-Vincent",
+          "postalCode": "25720",
+          "addressLocality": "Avanne-Aveney",
+          "addressCountry": "FR"
+        }
       },
       "areaServed": { "@type": "Place", "name": "Bourgogne-Franche-Comté" }
     },
@@ -143,11 +154,15 @@
       <div class="hero-copy">
         <div class="label" id="hero-label">Menuiserie · Ébénisterie du patrimoine</div>
         <h1 id="hero-h1">Restaurer et fabriquer <em>dans le respect du bâti ancien.</em></h1>
-        <p class="lead" id="hero-lead">MT2M est un atelier artisanal installé à Myon, dans le Doubs. Nous restaurons les fenêtres, portes, boiseries et parquets anciens, et fabriquons à neuf selon les techniques traditionnelles.</p>
+        <p class="lead" id="hero-lead">MT2M restaure les fenêtres, portes, boiseries et parquets anciens, et fabrique à neuf selon les techniques traditionnelles.</p>
         <div class="ctas">
-          <a class="btn primary" href="#realisations" id="hero-cta-primary">Voir nos réalisations</a>
+          <a class="btn primary" href="#realisations" id="hero-cta-primary">Voir les réalisations</a>
           <a class="btn light" href="#contact" id="hero-cta-secondary">Demander un devis</a>
         </div>
+        <ul class="hero-adresses" id="hero-adresses">
+          <li><strong>Atelier</strong>48 rue Saint-Vincent, 25720 Avanne-Aveney, près de Besançon</li>
+          <li><strong>Siège social</strong>4 rue du Colombier, 25440 Myon</li>
+        </ul>
       </div>
       <figure class="hero-arch">
         <div class="arch">
@@ -160,7 +175,7 @@
   </section>
 
   <!-- DOMAINES -->
-  <div class="domaines" aria-label="Nos domaines">
+  <div class="domaines" aria-label="Domaines d'intervention">
     <ul class="container" id="domaines-items"></ul>
   </div>
 
@@ -253,8 +268,8 @@
     <div class="container">
       <div class="section-head">
         <div class="label">Contact &amp; devis</div>
-        <h2>Parlons de votre bâtiment.</h2>
-        <p class="intro">Le plus simple : appelez au <a class="tel-inline" href="tel:+33684789984" data-tel>06 84 78 99 84</a>. Vous pouvez aussi remplir le formulaire, nous vous répondrons rapidement.</p>
+        <h2>Un projet pour votre bâtiment ?</h2>
+        <p class="intro">Le plus simple : appelez au <a class="tel-inline" href="tel:+33684789984" data-tel>06 84 78 99 84</a>. Vous pouvez aussi remplir le formulaire, une réponse vous sera apportée rapidement.</p>
       </div>
 
       <div class="form-grid">
@@ -283,7 +298,7 @@
             <button type="submit" class="btn primary form-submit-btn"><span class="form-submit-label">Envoyer ma demande</span></button>
             <p id="form-feedback" class="form-feedback" aria-live="polite" hidden></p>
           </div>
-          <p class="micro">Vos informations servent uniquement à répondre à votre demande. Voir notre <a href="#" onclick="event.preventDefault();document.getElementById('privacy-modal').classList.add('open')">politique de confidentialité</a>.</p>
+          <p class="micro">Vos informations servent uniquement à répondre à votre demande. Voir la <a href="#" onclick="event.preventDefault();document.getElementById('privacy-modal').classList.add('open')">politique de confidentialité</a>.</p>
         </form>
 
         <aside class="aside">
@@ -297,8 +312,12 @@
             <a class="coord-mail" href="mailto:mt2m.flo@gmail.com" data-mail>mt2m.flo@gmail.com</a>
           </div>
           <div class="coord">
-            <div class="label">L'atelier</div>
-            <p id="contact-adresse"></p>
+            <div class="label">Atelier MT2M</div>
+            <p id="contact-atelier">48 rue Saint-Vincent<br>25720 Avanne-Aveney, près de Besançon</p>
+          </div>
+          <div class="coord">
+            <div class="label">Siège social</div>
+            <p id="contact-siege">4 rue du Colombier<br>25440 Myon</p>
           </div>
           <div class="coord">
             <div class="label">Zone d'intervention</div>
@@ -324,8 +343,10 @@
       <p><a href="#savoir-faire">Savoir-faire</a><br><a href="#realisations">Réalisations</a><br><a href="#atelier">L'atelier</a><br><a href="#contact">Contact &amp; devis</a></p>
     </div>
     <div>
-      <div class="label">Nous joindre</div>
-      <p><a href="tel:+33684789984" data-tel>06 84 78 99 84</a><br><a href="mailto:mt2m.flo@gmail.com" data-mail>mt2m.flo@gmail.com</a><br><span id="footer-adresse">4 rue du Colombier, 25440 Myon</span></p>
+      <div class="label">Contact</div>
+      <p><a href="tel:+33684789984" data-tel>06 84 78 99 84</a><br><a href="mailto:mt2m.flo@gmail.com" data-mail>mt2m.flo@gmail.com</a></p>
+      <p><strong>Atelier</strong><br><span id="footer-atelier">48 rue Saint-Vincent, 25720 Avanne-Aveney, près de Besançon</span></p>
+      <p><strong>Siège social</strong><br><span id="footer-siege">4 rue du Colombier, 25440 Myon</span></p>
     </div>
     <div>
       <div class="label">Légal</div>
@@ -385,7 +406,7 @@
 
     <div class="legal-section">
       <h3>Données personnelles</h3>
-      <p>Ce site collecte des données personnelles uniquement via le formulaire de contact. Le détail des données collectées, de leur utilisation et de vos droits figure dans notre <a href="#" onclick="event.preventDefault();document.getElementById('legal-modal').classList.remove('open');document.getElementById('privacy-modal').classList.add('open')">politique de confidentialité</a>.</p>
+      <p>Ce site collecte des données personnelles uniquement via le formulaire de contact. Le détail des données collectées, de leur utilisation et de vos droits figure dans la <a href="#" onclick="event.preventDefault();document.getElementById('legal-modal').classList.remove('open');document.getElementById('privacy-modal').classList.add('open')">politique de confidentialité</a>.</p>
     </div>
   </div>
 </div>

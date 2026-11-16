@@ -386,6 +386,28 @@ section{scroll-margin-top:var(--topbar-h)}
   flex-wrap:wrap
 }
 
+.hero-adresses{
+  list-style:none;
+  margin:36px 0 0;
+  padding:22px 0 0;
+  border-top:1px solid var(--line-dark);
+  display:grid;
+  gap:10px;
+  font-size:17px;
+  color:#D8D0C4
+}
+
+.hero-adresses li{
+  display:grid;
+  grid-template-columns:118px 1fr;
+  gap:12px
+}
+
+.hero-adresses strong{
+  font:italic 400 18px var(--serif);
+  color:var(--bronze-light)
+}
+
 .hero-arch{
   position:relative;
   margin:0;
@@ -652,6 +674,58 @@ section{scroll-margin-top:var(--topbar-h)}
 
 .savoir .arch img{cursor:zoom-in;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .savoir:hover .arch img{transform:scale(1.04)}
+
+.savoir-photos{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin:-8px 0 12px
+}
+
+.savoir-thumb{
+  position:relative;
+  display:block;
+  aspect-ratio:1/1;
+  border-radius:var(--radius);
+  overflow:hidden
+}
+
+.savoir-thumb[hidden]{display:none}
+
+.savoir-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  cursor:zoom-in;
+  transition:opacity .2s ease
+}
+
+.savoir-thumb img:hover{opacity:.85}
+
+.savoir-thumb[data-plus]:after{
+  content:attr(data-plus);
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  background:rgba(34,36,42,.6);
+  color:#fff;
+  font:600 22px var(--serif);
+  pointer-events:none
+}
+
+.savoir-voir{
+  margin:0 0 22px;
+  padding:0 0 2px;
+  background:none;
+  border:0;
+  border-bottom:2px solid var(--bronze-light);
+  font:700 16px var(--sans);
+  color:var(--bronze-dark);
+  cursor:pointer
+}
+
+.savoir-voir:after{content:" →"}
 
 .savoir h3{
   font:400 28px/1.15 var(--serif);

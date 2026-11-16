@@ -341,9 +341,16 @@ function renderContact(c) {
   document.querySelectorAll('[data-tel-dock]').forEach(a => { a.href = telHref(c.telephone); });
   document.querySelectorAll('[data-mail]').forEach(a => { a.href = 'mailto:' + c.email; a.textContent = c.email; });
   if (el('contact-gerant'))  el('contact-gerant').textContent  = c.gerant;
-  if (el('contact-adresse')) el('contact-adresse').innerHTML   = `MT2M<br>${c.adresse}<br>${c.ville}`;
+  if (el('contact-atelier')) el('contact-atelier').innerHTML   = `${c.atelier_adresse}<br>${c.atelier_ville}`;
+  if (el('contact-siege'))   el('contact-siege').innerHTML     = `${c.siege_adresse}<br>${c.siege_ville}`;
   if (el('contact-zone'))    el('contact-zone').textContent    = c.zone;
-  if (el('footer-adresse'))  el('footer-adresse').textContent  = `${c.adresse}, ${c.ville}`;
+  if (el('footer-atelier'))  el('footer-atelier').textContent  = `${c.atelier_adresse}, ${c.atelier_ville}`;
+  if (el('footer-siege'))    el('footer-siege').textContent    = `${c.siege_adresse}, ${c.siege_ville}`;
+  if (el('hero-adresses')) {
+    el('hero-adresses').innerHTML = `
+      <li><strong>Atelier</strong>${c.atelier_adresse}, ${c.atelier_ville}</li>
+      <li><strong>Siège social</strong>${c.siege_adresse}, ${c.siege_ville}</li>`;
+  }
 }
 
 function renderAccueil(d, chantiers) {
@@ -383,18 +390,42 @@ function renderSavoirFaire(d) {
   if (el('sf-lead'))  el('sf-lead').textContent  = d.lead;
 
   if (el('sf-items')) {
-    el('sf-items').innerHTML = d.items.map(s => `
+    el('sf-items').innerHTML = d.items.map((s, i) => {
+      const groupe = 'savoir-' + i;
+      const photos = s.photos || [];
+      const visibles = 4;
+
+      /* vignettes : les 4 premières visibles, les autres défilent dans la visionneuse */
+      const vignettes = photos.length ? `
+        <div class="savoir-photos">
+          ${photos.map((p, k) => `
+          <span class="savoir-thumb"${k === visibles - 1 && photos.length > visibles ? ` data-plus="+${photos.length - visibles}"` : ''}${k >= visibles ? ' hidden' : ''}>
+            <img src="${p.image}" alt="${p.legende}" data-legende="${p.legende}" data-zoom="${groupe}" loading="lazy">
+          </span>`).join('')}
+        </div>
+        <button class="savoir-voir" type="button" data-groupe="${groupe}">Voir les ${photos.length + 1} photos</button>` : '';
+
+      return `
       <article class="savoir">
         <div class="arch">${s.image
-          ? `<img src="${s.image}" alt="${s.legende}" data-legende="${s.legende}" data-zoom="savoir-faire" loading="lazy">`
+          ? `<img src="${s.image}" alt="${s.legende}" data-legende="${s.legende}" data-zoom="${groupe}" loading="lazy">`
           : '<span class="savoir-attente">Photo à venir</span>'}</div>
+        ${vignettes}
         <h3>${s.titre}</h3>
         <p>${s.texte}</p>
         <ul class="points">${s.points.map(p => `<li>${p}</li>`).join('')}</ul>
-      </article>`
-    ).join('');
+      </article>`;
+    }).join('');
   }
 }
+
+/* Bouton « Voir les N photos » : ouvre la visionneuse sur la première photo du groupe */
+document.addEventListener('click', e => {
+  const bouton = e.target.closest('.savoir-voir');
+  if (!bouton) return;
+  const premiere = document.querySelector(`img[data-zoom="${bouton.dataset.groupe}"]`);
+  if (premiere) premiere.click();
+});
 
 function renderChantiers(d) {
   if (el('real-label')) el('real-label').textContent = d.label;
