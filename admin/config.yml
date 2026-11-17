@@ -21,8 +21,10 @@ display_url: https://mt2m.vercel.app
 logo:
   src: /img/logo.webp
 
-media_folder: img/chantiers
-public_folder: img/chantiers
+# Tout le dossier img/ est visible dans l'admin : les photos déjà en ligne
+# (img/pavillon, img/dole…) s'affichent en aperçu, et Florent peut les réutiliser.
+media_folder: img
+public_folder: img
 
 # Les photos envoyées sont converties automatiquement en WebP et réduites
 media_libraries:
