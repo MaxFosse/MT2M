@@ -353,16 +353,18 @@ function renderContact(c) {
   }
 }
 
-function renderAccueil(d, chantiers) {
+function renderAccueil(d, chantiers, photos) {
   const h = d.hero;
+  const p = photos.accueil || {};
   if (el('hero-label'))         el('hero-label').textContent         = h.label;
   if (el('hero-h1'))            el('hero-h1').innerHTML              = `${h.h1} <em>${h.h1_italique}</em>`;
   if (el('hero-lead'))          el('hero-lead').textContent          = h.lead;
   if (el('hero-cta-primary'))   el('hero-cta-primary').textContent   = h.cta_primary;
   if (el('hero-cta-secondary')) el('hero-cta-secondary').textContent = h.cta_secondary;
-  if (el('hero-tag'))           el('hero-tag').innerHTML             = `<span class="tag-num">${h.etiquette_titre}</span><strong>${h.etiquette_lieu}</strong>`;
-  if (el('hero-image') && !el('hero-image').src.endsWith(h.image)) el('hero-image').src = h.image;
-  if (el('hero-image'))         el('hero-image').alt                 = h.image_alt;
+  if (el('hero-tag'))           el('hero-tag').innerHTML             = `<span class="tag-num">${p.etiquette_haut || ''}</span><strong>${p.etiquette_bas || ''}</strong>`;
+  if (el('hero-tag'))           el('hero-tag').parentElement.hidden  = !p.etiquette_haut && !p.etiquette_bas;
+  if (el('hero-image') && p.image && !el('hero-image').src.endsWith(p.image)) el('hero-image').src = p.image;
+  if (el('hero-image'))         el('hero-image').alt                 = p.description || '';
 
   if (el('domaines-items')) {
     el('domaines-items').innerHTML = d.domaines.map(dom => `
@@ -374,25 +376,32 @@ function renderAccueil(d, chantiers) {
   if (el('vitrine-label')) el('vitrine-label').textContent = v.label;
   if (el('vitrine-h2'))    el('vitrine-h2').textContent    = v.h2;
   if (el('vitrine-lead'))  el('vitrine-lead').textContent  = v.lead;
-  if (el('vitrine-lien'))  el('vitrine-lien').href         = '#chantier/' + v.chantier;
-
-  const c = chantiers.find(x => x.id === v.chantier);
-  const o = c && c.ouvrages[(v.ouvrage || 1) - 1];
+  /* Chantier mis en avant ; s'il a été supprimé ou modifié dans l'admin,
+     on prend le premier ouvrage qui a au moins 3 photos */
+  let c = chantiers.find(x => x.id === v.chantier);
+  let o = c && c.ouvrages[(v.ouvrage || 1) - 1];
+  if (!o || o.etapes.length < 2) {
+    c = chantiers.find(x => x.ouvrages.some(ouv => ouv.etapes.length >= 3));
+    o = c && c.ouvrages.find(ouv => ouv.etapes.length >= 3);
+  }
+  if (el('vitrine-lien') && c) el('vitrine-lien').href = '#chantier/' + c.id;
   if (o && el('vitrine-fil')) {
     el('vitrine-fil').innerHTML = filHtml(o.etapes, o.titre);
     initFil(el('vitrine-fil').querySelector('[data-fil]'));
   }
 }
 
-function renderSavoirFaire(d) {
+function renderSavoirFaire(d, photosSite) {
   if (el('sf-label')) el('sf-label').textContent = d.label;
   if (el('sf-h2'))    el('sf-h2').textContent    = d.h2;
   if (el('sf-lead'))  el('sf-lead').textContent  = d.lead;
 
   if (el('sf-items')) {
-    el('sf-items').innerHTML = d.items.map((s, i) => {
+    el('sf-items').innerHTML = d.items.map((item, i) => {
+      /* textes figés (savoir-faire.json) + photos modifiables (photos.json) */
+      const s = { ...item, ...((photosSite.savoir_faire || {})[item.cle] || {}) };
       const groupe = 'savoir-' + i;
-      const photos = s.photos || [];
+      const photos = (s.photos || []).filter(p => p.image);
       const visibles = 4;
 
       /* vignettes : les 4 premières visibles, les autres défilent dans la visionneuse */
@@ -400,7 +409,7 @@ function renderSavoirFaire(d) {
         <div class="savoir-photos">
           ${photos.map((p, k) => `
           <span class="savoir-thumb"${k === visibles - 1 && photos.length > visibles ? ` data-plus="+${photos.length - visibles}"` : ''}${k >= visibles ? ' hidden' : ''}>
-            <img src="${p.image}" alt="${p.legende}" data-legende="${p.legende}" data-zoom="${groupe}" loading="lazy">
+            <img src="${p.image}" alt="${p.legende || ''}" data-legende="${p.legende || ''}" data-zoom="${groupe}" loading="lazy">
           </span>`).join('')}
         </div>
         <button class="savoir-voir" type="button" data-groupe="${groupe}">Voir les ${photos.length + 1} photos</button>` : '';
@@ -408,7 +417,7 @@ function renderSavoirFaire(d) {
       return `
       <article class="savoir">
         <div class="arch">${s.image
-          ? `<img src="${s.image}" alt="${s.legende}" data-legende="${s.legende}" data-zoom="${groupe}" loading="lazy">`
+          ? `<img src="${s.image}" alt="${s.legende || s.titre}" data-legende="${s.legende || s.titre}" data-zoom="${groupe}" loading="lazy">`
           : '<span class="savoir-attente">Photo à venir</span>'}</div>
         ${vignettes}
         <h3>${s.titre}</h3>
@@ -427,16 +436,16 @@ document.addEventListener('click', e => {
   if (premiere) premiere.click();
 });
 
-function renderChantiers(d) {
+function renderChantiers(d, chantiers) {
   if (el('real-label')) el('real-label').textContent = d.label;
   if (el('real-h2'))    el('real-h2').textContent    = d.h2;
   if (el('real-lead'))  el('real-lead').textContent  = d.lead;
 
   if (el('real-items')) {
-    el('real-items').innerHTML = d.chantiers.map((c, i) => `
+    el('real-items').innerHTML = chantiers.map((c, i) => `
       <a class="chantier" href="#chantier/${c.id}" id="carte-${c.id}">
         <div class="chantier-photo">
-          <div class="arch"><img src="${c.couverture}" alt="${c.titre}" loading="lazy"></div>
+          <div class="arch">${c.couverture ? `<img src="${c.couverture}" alt="${c.titre}" loading="lazy">` : '<span class="savoir-attente">Photo à venir</span>'}</div>
           <span class="tag"><span class="tag-body">
             <span class="tag-num">Chantier n° ${pad2(i + 1)}</span>
             <strong>${c.titre}</strong>
@@ -450,20 +459,20 @@ function renderChantiers(d) {
   }
 }
 
-function renderAtelier(d) {
+function renderAtelier(d, photos, parcours) {
   if (el('atelier-label')) el('atelier-label').textContent = d.label;
   if (el('atelier-h2'))    el('atelier-h2').textContent    = d.h2;
 
   const p = d.presentation;
+  const ph = photos.atelier || {};
   if (el('atelier-copy'))    el('atelier-copy').innerHTML      = p.paragraphes.map(t => `<p>${t}</p>`).join('');
-  if (el('atelier-image'))   { el('atelier-image').src = p.image; el('atelier-image').alt = p.legende; el('atelier-image').dataset.legende = p.legende; }
-  if (el('atelier-legende')) el('atelier-legende').textContent = p.legende;
+  if (el('atelier-image'))   { el('atelier-image').src = ph.image || ''; el('atelier-image').alt = ph.legende || ''; el('atelier-image').dataset.legende = ph.legende || ''; }
+  if (el('atelier-legende')) el('atelier-legende').textContent = ph.legende || '';
 
-  const pa = d.parcours;
-  if (el('parcours-label')) el('parcours-label').textContent = pa.label;
-  if (el('parcours-h3'))    el('parcours-h3').textContent    = pa.h3;
+  if (el('parcours-label')) el('parcours-label').textContent = d.parcours_label;
+  if (el('parcours-h3'))    el('parcours-h3').textContent    = parcours.titre || '';
   if (el('parcours-items')) {
-    el('parcours-items').innerHTML = pa.etapes.map(e => {
+    el('parcours-items').innerHTML = (parcours.etapes || []).map(e => {
       const texte = e.lien_texte && e.lien_url
         ? e.texte.replace(e.lien_texte, `<a href="${e.lien_url}" target="_blank" rel="noopener">${e.lien_texte}</a>`)
         : e.texte;
@@ -476,7 +485,7 @@ function renderAtelier(d) {
   if (el('techniques-items')) {
     el('techniques-items').innerHTML = t.items.map(item => `
       <article class="technique">
-        <div class="arch"><img src="${item.image}" alt="${item.titre}" data-legende="${item.titre}" data-zoom="techniques" loading="lazy"></div>
+        <div class="arch"><img src="${((photos.techniques || {})[item.cle] || {}).image || ''}" alt="${item.titre}" data-legende="${item.titre}" data-zoom="techniques" loading="lazy"></div>
         <h3>${item.titre}</h3>
         <p>${item.texte}</p>
       </article>`
@@ -554,12 +563,12 @@ function renderFiche(c, i) {
             ${c.lieu ? `<div><dt>Lieu</dt><dd>${c.lieu}</dd></div>` : ''}
             ${c.commune ? `<div><dt>Commune</dt><dd>${c.commune}</dd></div>` : ''}
             ${c.architecte ? `<div><dt>Architecte de l'édifice</dt><dd>${c.architecte}</dd></div>` : ''}
-            ${c.ouvrages.length > 1 ? `<div><dt>Ouvrages présentés</dt><dd>${c.ouvrages.length}</dd></div>` : ''}
+            ${c.ouvrages.filter(o => o.etapes.length).length > 1 ? `<div><dt>Ouvrages présentés</dt><dd>${c.ouvrages.filter(o => o.etapes.length).length}</dd></div>` : ''}
           </dl>
         </div>
       </header>
 
-      <figure class="fiche-cover"><img src="${c.couverture}" alt="${c.titre}" data-legende="${c.titre}" data-zoom="couverture"></figure>
+      ${c.couverture ? `<figure class="fiche-cover"><img src="${c.couverture}" alt="${c.titre}" data-legende="${c.titre}" data-zoom="couverture"></figure>` : ''}
 
       ${c.contexte || c.travaux.length ? `
       <div class="fiche-context">
@@ -635,22 +644,59 @@ document.addEventListener('keydown', e => {
 /* Année pied de page */
 document.querySelectorAll('[data-annee]').forEach(span => { span.textContent = new Date().getFullYear(); });
 
-/* Charge tous les fichiers */
+/* ═══════════════════════════════════════════════════════════
+   CHANTIERS : remis au propre après passage dans l'admin
+   (identifiant généré depuis le titre, listes vides tolérées)
+═══════════════════════════════════════════════════════════ */
+
+function slug(texte) {
+  return String(texte || 'chantier').normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'chantier';
+}
+
+function normaliserChantiers(liste) {
+  const vus = new Set();
+  return (liste || []).filter(c => c && c.titre).map(c => {
+    let id = slug(c.id || c.titre);
+    while (vus.has(id)) id += '-2';
+    vus.add(id);
+    return {
+      ...c,
+      id,
+      lieu: c.lieu || '',
+      commune: c.commune || '',
+      architecte: c.architecte || '',
+      resume: c.resume || '',
+      contexte: c.contexte || '',
+      travaux: (c.travaux || []).filter(Boolean),
+      ouvrages: (c.ouvrages || []).map(o => ({ ...o, texte: o.texte || '', etapes: (o.etapes || []).filter(e => e && e.image).map(e => ({ ...e, legende: e.legende || '' })) })),
+      galerie: (c.galerie || []).filter(g => g && g.image).map(g => ({ ...g, legende: g.legende || '' })),
+      couverture: c.couverture || (((c.ouvrages || [])[0] || {}).etapes || []).slice(-1).map(e => e.image)[0] || ''
+    };
+  });
+}
+
+/* Charge tous les fichiers
+   Modifiables par Florent (admin) : chantiers, photos, parcours
+   Figés (modifiés par Max uniquement) : tout le reste */
 Promise.all([
   fetch('content/contact.json').then(r => r.json()),
   fetch('content/accueil.json').then(r => r.json()),
   fetch('content/savoir-faire.json').then(r => r.json()),
+  fetch('content/realisations.json').then(r => r.json()),
   fetch('content/chantiers.json').then(r => r.json()),
   fetch('content/atelier.json').then(r => r.json()),
+  fetch('content/photos.json').then(r => r.json()),
+  fetch('content/parcours.json').then(r => r.json()),
   fetch('content/legal.json').then(r => r.json()),
   fetch('content/privacy.json').then(r => r.json()),
-]).then(([contact, accueil, savoirFaire, chantiers, atelier, legal, privacy]) => {
-  CHANTIERS = chantiers.chantiers;
+]).then(([contact, accueil, savoirFaire, realisations, chantiers, atelier, photos, parcours, legal, privacy]) => {
+  CHANTIERS = normaliserChantiers(chantiers.chantiers);
   renderContact(contact);
-  renderAccueil(accueil, CHANTIERS);
-  renderSavoirFaire(savoirFaire);
-  renderChantiers(chantiers);
-  renderAtelier(atelier);
+  renderAccueil(accueil, CHANTIERS, photos);
+  renderSavoirFaire(savoirFaire, photos);
+  renderChantiers(realisations, CHANTIERS);
+  renderAtelier(atelier, photos, parcours);
   renderLegal(legal);
   renderPrivacy(privacy);
   router();
