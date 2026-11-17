@@ -1,0 +1,23 @@
+{
+  "titre": "Florent Martin, menuisier-ébéniste.",
+  "etapes": [
+    {
+      "titre": "Menuiserie et ébénisterie",
+      "texte": "Formation et expérience aux métiers du bois : menuiserie, ébénisterie et techniques d'assemblage traditionnelles.",
+      "lien_texte": "",
+      "lien_url": ""
+    },
+    {
+      "titre": "En collaboration avec Philippe Bulle",
+      "texte": "Travail en collaboration avec Philippe Bulle, maître menuisier d'art spécialisé dans la restauration des monuments historiques.",
+      "lien_texte": "Philippe Bulle",
+      "lien_url": "https://www.philippe-bulle.fr/"
+    },
+    {
+      "titre": "La création de MT2M",
+      "texte": "Installation de l'atelier à Avanne-Aveney, près de Besançon, et chantiers de restauration dans toute la Bourgogne-Franche-Comté.",
+      "lien_texte": "",
+      "lien_url": ""
+    }
+  ]
+}

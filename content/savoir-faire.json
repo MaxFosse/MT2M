@@ -4,65 +4,40 @@
   "lead": "De la simple réparation à la fabrication complète, chaque intervention respecte les matériaux du bâti ancien. Selon l'ouvrage, les assemblages sont réalisés selon des techniques anciennes, comme les tenons débouchants et le chevillage à la tire.",
   "items": [
     {
+      "cle": "fenetres",
       "titre": "Fenêtres, portes et menuiseries anciennes",
       "texte": "Selon l'état de l'ouvrage, il est possible de reprendre les châssis et les petits bois, de réparer les portes moulurées et de remettre en fonctionnement les quincailleries métalliques.",
-      "points": ["Restauration des châssis et des petits bois", "Mastiquage à l'ancienne des carreaux en verre soufflé avec du mastic à l'huile de lin", "Remise en fonctionnement des quincailleries métalliques"],
-      "image": "img/dole/fenetre/fenetre-replacee-en-facade.webp",
-      "legende": "Fenêtre restaurée et replacée en façade, Maison des Orphelins à Dole",
-      "photos": [
-        { "image": "img/pavillon/apres-porte-exte.webp", "legende": "Porte extérieure vitrée fabriquée à neuf, Pavillon de la Musique à Besançon" },
-        { "image": "img/pavillon/fenetre-facade-apres.webp", "legende": "Fenêtres à petits bois restaurées, Pavillon de la Musique" },
-        { "image": "img/pavillon/porte-inte-repose.webp", "legende": "Porte intérieure moulurée restaurée et reposée, Pavillon de la Musique" },
-        { "image": "img/dole/fenetre/facades-cour-interieure.webp", "legende": "Fenêtres restaurées dans la cour de la Maison des Orphelins, à Dole" },
-        { "image": "img/moulinmontfleur/porte-posee-vue-exte.webp", "legende": "Porte en planches croisées, Moulin de Pont des Vents à Montfleur" },
-        { "image": "img/dole/fenetre/fenetre-restauree-en-atelier.webp", "legende": "Fenêtre restaurée à l'atelier, prête à la pose" },
-        { "image": "img/stvincent/apres-travaux.webp", "legende": "Porte et décor en bois restitué, église Saint-Vincent d'Avanne-Aveney" },
-        { "image": "img/pavillon/apres-fronton.webp", "legende": "Imposte vitrée en éventail, Pavillon de la Musique" }
-      ]
+      "points": ["Restauration des châssis et des petits bois", "Mastiquage à l'ancienne des carreaux en verre soufflé avec du mastic à l'huile de lin", "Remise en fonctionnement des quincailleries métalliques"]
     },
     {
+      "cle": "boiseries",
       "titre": "Boiseries et ouvrages d'ébénisterie",
       "texte": "La rénovation des lambris, des panneaux moulurés et des éléments décoratifs est effectuée dans le respect de leurs profils et de leurs assemblages d'origine.",
-      "points": ["Boiseries murales et lambris", "Panneaux moulurés", "Décapage et relevé des couches de peinture"],
-      "image": "img/dole/boiserie/renovation-et-reconstruction-a-lidentique.webp",
-      "legende": "Boiseries de la Maison des Orphelins, à Dole",
-      "photos": []
+      "points": ["Boiseries murales et lambris", "Panneaux moulurés", "Décapage et relevé des couches de peinture"]
     },
     {
+      "cle": "parquets",
       "titre": "Parquets et planchers anciens",
       "texte": "Les planchers d'époque peuvent être conservés en remplaçant les lames abîmées et en gardant le bois d'origine.",
-      "points": ["Dépose des lames dégradées", "Reprise des appuis", "Repose de lames dans le respect de l'existant"],
-      "image": "img/dole/plancher/plancher-apres.webp",
-      "legende": "Plancher restauré à la Maison des Orphelins, à Dole",
-      "photos": []
+      "points": ["Dépose des lames dégradées", "Reprise des appuis", "Repose de lames dans le respect de l'existant"]
     },
     {
+      "cle": "greffes",
       "titre": "Greffes et assemblages traditionnels",
       "texte": "Seul le bois abîmé est retiré, puis remplacé par une greffe de bois neuf, assemblée à l'ancienne.",
-      "points": ["Greffes et entures", "Tenons débouchants, chevillage à la tire, queues d'aronde", "Un maximum de bois d'origine conservé"],
-      "image": "img/villers/assemblage-queue-daronde-chevillee.webp",
-      "legende": "Assemblage à clef en queue d'aronde, chevillé, chapelle de Villers-sous-Chalamont",
-      "photos": [
-        { "image": "img/villers/atelier-2.webp", "legende": "Préparation des greffes sur un panneau, chapelle de Villers-sous-Chalamont" },
-        { "image": "img/villers/pendant.webp", "legende": "Panneaux de boiserie repris à l'atelier" },
-        { "image": "img/pavillon/pendant-porte-inte.webp", "legende": "Greffe de bois sur une porte moulurée, Pavillon de la Musique" }
-      ]
+      "points": ["Greffes et entures", "Tenons débouchants, chevillage à la tire, queues d'aronde", "Un maximum de bois d'origine conservé"]
     },
     {
+      "cle": "restitution",
       "titre": "Restitution à l'identique",
       "texte": "Lorsqu'un élément a disparu, il est refait d'après le modèle d'origine : relevé des profils, façonnage, ajustement.",
-      "points": ["Relevé des profils et moulures", "Tournage et façonnage en atelier", "Fabrication à neuf d'ouvrages complets"],
-      "image": "img/stvincent/tournage-de-loculus.webp",
-      "legende": "Tournage d'un oculus pour la restitution du décor de l'église Saint-Vincent",
-      "photos": []
+      "points": ["Relevé des profils et moulures", "Tournage et façonnage en atelier", "Fabrication à neuf d'ouvrages complets"]
     },
     {
+      "cle": "monuments",
       "titre": "Édifices patrimoniaux et monuments",
       "texte": "Chapelles, églises, demeures et bâtiments anciens : chaque intervention se fait en lien avec les propriétaires, les communes et les architectes.",
-      "points": ["Chapelles et églises", "Bâtiments et demeures historiques", "Monuments historiques"],
-      "image": "img/villers/apres.webp",
-      "legende": "Chapelle Notre-Dame-des-Bois, Villers-sous-Chalamont",
-      "photos": []
+      "points": ["Chapelles et églises", "Bâtiments et demeures historiques", "Monuments historiques"]
     }
   ]
 }

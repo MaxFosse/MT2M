@@ -6,51 +6,26 @@
       "MT2M est une entreprise artisanale de menuiserie et d'ébénisterie dirigée par Florent Martin. Son atelier se trouve au 48 rue Saint-Vincent à Avanne-Aveney, près de Besançon, et son siège social au 4 rue du Colombier à Myon.",
       "L'entreprise s'est spécialisée dans la restauration et la conservation des ouvrages en bois du bâti ancien : fenêtres, portes, boiseries, parquets et ouvrages d'ébénisterie.",
       "Une grande partie du travail se fait à l'atelier : les ouvrages y sont démontés, réparés, complétés puis remontés avant d'être reposés. Quand un élément a disparu, il est fabriqué à neuf, selon les techniques traditionnelles."
-    ],
-    "image": "img/pavillon/avant-porte-exte.webp",
-    "legende": "Une porte vitrée en cours de fabrication à l'atelier"
-  },
-  "parcours": {
-    "label": "Le parcours",
-    "h3": "Florent Martin, menuisier-ébéniste.",
-    "etapes": [
-      {
-        "titre": "Menuiserie et ébénisterie",
-        "texte": "Formation et expérience aux métiers du bois : menuiserie, ébénisterie et techniques d'assemblage traditionnelles.",
-        "lien_texte": "",
-        "lien_url": ""
-      },
-      {
-        "titre": "En collaboration avec Philippe Bulle",
-        "texte": "Travail en collaboration avec Philippe Bulle, maître menuisier d'art spécialisé dans la restauration des monuments historiques.",
-        "lien_texte": "Philippe Bulle",
-        "lien_url": "https://www.philippe-bulle.fr/"
-      },
-      {
-        "titre": "La création de MT2M",
-        "texte": "Installation de l'atelier à Avanne-Aveney, près de Besançon, et chantiers de restauration dans toute la Bourgogne-Franche-Comté.",
-        "lien_texte": "",
-        "lien_url": ""
-      }
     ]
   },
+  "parcours_label": "Le parcours",
   "techniques": {
     "label": "Le travail en atelier",
     "items": [
       {
+        "cle": "greffe",
         "titre": "La greffe",
-        "texte": "Seule la partie abîmée est découpée, puis remplacée par une pièce de bois neuf, ajustée et collée. Le reste de l'ouvrage reste d'origine.",
-        "image": "img/pavillon/pendant-porte-inte.webp"
+        "texte": "Seule la partie abîmée est découpée, puis remplacée par une pièce de bois neuf, ajustée et collée. Le reste de l'ouvrage reste d'origine."
       },
       {
+        "cle": "assemblage",
         "titre": "L'assemblage",
-        "texte": "Tenons débouchants, chevillage à la tire, queues d'aronde : les pièces sont assemblées comme autrefois, pour durer.",
-        "image": "img/dole/fenetre/chassis-en-cours-dassemblage.webp"
+        "texte": "Tenons débouchants, chevillage à la tire, queues d'aronde : les pièces sont assemblées comme autrefois, pour durer."
       },
       {
+        "cle": "fabrication",
         "titre": "La fabrication",
-        "texte": "Quand un ouvrage a disparu, il est refait à neuf : relevé des profils, choix du bois, façonnage et ajustement sur place.",
-        "image": "img/stvincent/fabrication-dun-chapiteau.webp"
+        "texte": "Quand un ouvrage a disparu, il est refait à neuf : relevé des profils, choix du bois, façonnage et ajustement sur place."
       }
     ]
   },

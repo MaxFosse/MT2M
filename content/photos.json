@@ -1,0 +1,62 @@
+{
+  "accueil": {
+    "image": "img/stvincent/apres-travaux.webp",
+    "description": "Restitution du décor en bois de l'église Saint-Vincent d'Avanne-Aveney : porte, oculi, fronton et croix, tels que l'architecte Pierre Marnotte les avait dessinés",
+    "etiquette_haut": "Église Saint-Vincent · Avanne-Aveney",
+    "etiquette_bas": "Restitution du décor en bois"
+  },
+  "savoir_faire": {
+    "fenetres": {
+      "image": "img/dole/fenetre/fenetre-replacee-en-facade.webp",
+      "legende": "Fenêtre restaurée et replacée en façade, Maison des Orphelins à Dole",
+      "photos": [
+        { "image": "img/pavillon/apres-porte-exte.webp", "legende": "Porte extérieure vitrée fabriquée à neuf, Pavillon de la Musique à Besançon" },
+        { "image": "img/pavillon/fenetre-facade-apres.webp", "legende": "Fenêtres à petits bois restaurées, Pavillon de la Musique" },
+        { "image": "img/pavillon/porte-inte-repose.webp", "legende": "Porte intérieure moulurée restaurée et reposée, Pavillon de la Musique" },
+        { "image": "img/dole/fenetre/facades-cour-interieure.webp", "legende": "Fenêtres restaurées dans la cour de la Maison des Orphelins, à Dole" },
+        { "image": "img/moulinmontfleur/porte-posee-vue-exte.webp", "legende": "Porte en planches croisées, Moulin de Pont des Vents à Montfleur" },
+        { "image": "img/dole/fenetre/fenetre-restauree-en-atelier.webp", "legende": "Fenêtre restaurée à l'atelier, prête à la pose" },
+        { "image": "img/stvincent/apres-travaux.webp", "legende": "Porte et décor en bois restitué, église Saint-Vincent d'Avanne-Aveney" },
+        { "image": "img/pavillon/apres-fronton.webp", "legende": "Imposte vitrée en éventail, Pavillon de la Musique" }
+      ]
+    },
+    "boiseries": {
+      "image": "img/dole/boiserie/renovation-et-reconstruction-a-lidentique.webp",
+      "legende": "Boiseries de la Maison des Orphelins, à Dole",
+      "photos": []
+    },
+    "parquets": {
+      "image": "img/dole/plancher/plancher-apres.webp",
+      "legende": "Plancher restauré à la Maison des Orphelins, à Dole",
+      "photos": []
+    },
+    "greffes": {
+      "image": "img/villers/assemblage-queue-daronde-chevillee.webp",
+      "legende": "Assemblage à clef en queue d'aronde, chevillé, chapelle de Villers-sous-Chalamont",
+      "photos": [
+        { "image": "img/villers/atelier-2.webp", "legende": "Préparation des greffes sur un panneau, chapelle de Villers-sous-Chalamont" },
+        { "image": "img/villers/pendant.webp", "legende": "Panneaux de boiserie repris à l'atelier" },
+        { "image": "img/pavillon/pendant-porte-inte.webp", "legende": "Greffe de bois sur une porte moulurée, Pavillon de la Musique" }
+      ]
+    },
+    "restitution": {
+      "image": "img/stvincent/tournage-de-loculus.webp",
+      "legende": "Tournage d'un oculus pour la restitution du décor de l'église Saint-Vincent",
+      "photos": []
+    },
+    "monuments": {
+      "image": "img/villers/apres.webp",
+      "legende": "Chapelle Notre-Dame-des-Bois, Villers-sous-Chalamont",
+      "photos": []
+    }
+  },
+  "atelier": {
+    "image": "img/pavillon/avant-porte-exte.webp",
+    "legende": "Une porte vitrée en cours de fabrication à l'atelier"
+  },
+  "techniques": {
+    "greffe": { "image": "img/pavillon/pendant-porte-inte.webp" },
+    "assemblage": { "image": "img/dole/fenetre/chassis-en-cours-dassemblage.webp" },
+    "fabrication": { "image": "img/stvincent/fabrication-dun-chapiteau.webp" }
+  }
+}

@@ -5,11 +5,7 @@
     "h1_italique": "dans le respect du bâti ancien.",
     "lead": "MT2M restaure les fenêtres, portes, boiseries et parquets anciens, et fabrique à neuf selon les techniques traditionnelles.",
     "cta_primary": "Voir les réalisations",
-    "cta_secondary": "Demander un devis",
-    "image": "img/stvincent/apres-travaux.webp",
-    "image_alt": "Restitution du décor en bois de l'église Saint-Vincent d'Avanne-Aveney : porte, oculi, fronton et croix, tels que l'architecte Pierre Marnotte les avait dessinés",
-    "etiquette_titre": "Église Saint-Vincent · Avanne-Aveney",
-    "etiquette_lieu": "Restitution du décor en bois"
+    "cta_secondary": "Demander un devis"
   },
   "domaines": [
     { "nom": "Fenêtres", "icone": "fenetre" },
