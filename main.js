@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // FORMULAIRE DE CONTACT (EmailJS) ───────────────────────────────────────────
-// Tant que les 3 clés sont vides, le formulaire ouvre la messagerie du visiteur
-// avec le message déjà rédigé (rien ne se perd).
+// Compte EmailJS de Max (phase de test) : à remplacer par celui de Florent.
+// Variables du template : {{demande}} {{nom}} {{email}} {{telephone}} {{commune}} {{message}} {{date}}
+// Si les clés sont vides, le formulaire ouvre la messagerie du visiteur (rien ne se perd).
 (function () {
-  const EMAILJS_PUBLIC_KEY  = '';
-  const EMAILJS_SERVICE_ID  = '';
-  const EMAILJS_TEMPLATE_ID = '';
+  const EMAILJS_PUBLIC_KEY  = 'DPoF-GpESG1a4iCuR';
+  const EMAILJS_SERVICE_ID  = 'service_62a371d';
+  const EMAILJS_TEMPLATE_ID = 'template_afhmvcg';
 
   const form     = document.getElementById('contact-form');
   if (!form) return;
@@ -106,12 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        demande: demande,
-        name: name,
-        email: email,
-        phone: phone,
-        commune: commune,
-        message: message,
+        demande:   demande,
+        nom:       name,
+        email:     email,
+        telephone: phone || 'Non renseigné',
+        commune:   commune || 'Non renseignée',
+        message:   message,
+        date:      new Date().toLocaleString('fr-FR', { dateStyle: 'full', timeStyle: 'short' }),
       });
 
       form.reset();
