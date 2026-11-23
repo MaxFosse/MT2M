@@ -36,9 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // FORMULAIRE DE CONTACT (EmailJS) ───────────────────────────────────────────
-// Compte EmailJS de Max (phase de test) : à remplacer par celui de Florent.
-// Variables du template : {{demande}} {{nom}} {{email}} {{telephone}} {{commune}} {{message}} {{date}}
-// Si les clés sont vides, le formulaire ouvre la messagerie du visiteur (rien ne se perd).
+
 (function () {
   const EMAILJS_PUBLIC_KEY  = '6UGo377_ymCKmYMxR';
   const EMAILJS_SERVICE_ID  = 'service_5ar1p2i';
@@ -94,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    /* Pas encore de clés EmailJS : on passe par la messagerie du visiteur */
     if (!emailjsReady) {
       const corps = `${message}\n\n---\nNom : ${name}\nTéléphone : ${phone || '-'}\nCommune du chantier : ${commune || '-'}\nE-mail : ${email}`;
       location.href = `mailto:${CONTACT.email}?subject=${encodeURIComponent('Site MT2M : ' + demande)}&body=${encodeURIComponent(corps)}`;
@@ -378,8 +375,7 @@ function renderAccueil(d, chantiers, photos) {
   if (el('vitrine-label')) el('vitrine-label').textContent = v.label;
   if (el('vitrine-h2'))    el('vitrine-h2').textContent    = v.h2;
   if (el('vitrine-lead'))  el('vitrine-lead').textContent  = v.lead;
-  /* Chantier mis en avant ; s'il a été supprimé ou modifié dans l'admin,
-     on prend le premier ouvrage qui a au moins 3 photos */
+  /* Chantier mis en avant */
   let c = chantiers.find(x => x.id === v.chantier);
   let o = c && c.ouvrages[(v.ouvrage || 1) - 1];
   if (!o || o.etapes.length < 2) {
@@ -430,7 +426,7 @@ function renderSavoirFaire(d, photosSite) {
   }
 }
 
-/* Bouton « Voir les N photos » : ouvre la visionneuse sur la première photo du groupe */
+/* Bouton « Voir les photos » */
 document.addEventListener('click', e => {
   const bouton = e.target.closest('.savoir-voir');
   if (!bouton) return;
@@ -647,8 +643,7 @@ document.addEventListener('keydown', e => {
 document.querySelectorAll('[data-annee]').forEach(span => { span.textContent = new Date().getFullYear(); });
 
 /* ═══════════════════════════════════════════════════════════
-   CHANTIERS : remis au propre après passage dans l'admin
-   (identifiant généré depuis le titre, listes vides tolérées)
+   CHANTIERS
 ═══════════════════════════════════════════════════════════ */
 
 function slug(texte) {
@@ -678,9 +673,7 @@ function normaliserChantiers(liste) {
   });
 }
 
-/* Charge tous les fichiers
-   Modifiables par Florent (admin) : chantiers, photos, parcours
-   Figés (modifiés par Max uniquement) : tout le reste */
+/* Charge tous les fichiers */
 Promise.all([
   fetch('content/contact.json').then(r => r.json()),
   fetch('content/accueil.json').then(r => r.json()),
