@@ -1,6 +1,7 @@
 {
   "chantiers": [
     {
+      "id": "pavillon-de-la-musique",
       "titre": "Menuiseries du Pavillon de la Musique",
       "lieu": "Pavillon de la Musique, centre diocésain",
       "commune": "Besançon (Doubs)",
@@ -20,112 +21,52 @@
           "titre": "Fronton : imposte en éventail",
           "texte": "L'imposte en éventail qui surmonte l'entrée a été entièrement façonnée en atelier, rayon par rayon, puis mise en place et vitrée.",
           "etapes": [
-            {
-              "etape": "pendant",
-              "image": "img/pavillon/avant-fronton.webp",
-              "legende": "Façonnage de l'éventail en atelier"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/pavillon/pendant-fronton.webp",
-              "legende": "Détail de la dentelle en bois"
-            },
-            {
-              "etape": "apres",
-              "image": "img/pavillon/apres-fronton.webp",
-              "legende": "Imposte vitrée en place"
-            }
+            { "etape": "pendant", "image": "img/pavillon/avant-fronton.webp", "legende": "Façonnage de l'éventail en atelier" },
+            { "etape": "pendant", "image": "img/pavillon/pendant-fronton.webp", "legende": "Détail de la dentelle en bois" },
+            { "etape": "apres", "image": "img/pavillon/apres-fronton.webp", "legende": "Imposte vitrée en place" }
           ]
         },
         {
           "titre": "Porte extérieure vitrée",
           "texte": "Une porte-fenêtre neuve à petits bois, fabriquée en atelier selon les assemblages traditionnels et vitrée en verre soufflé.",
           "etapes": [
-            {
-              "etape": "pendant",
-              "image": "img/pavillon/avant-porte-exte.webp",
-              "legende": "Fabrication en atelier"
-            },
-            {
-              "etape": "apres",
-              "image": "img/pavillon/apres-porte-exte.webp",
-              "legende": "Porte posée, vue de l'intérieur"
-            }
+            { "etape": "pendant", "image": "img/pavillon/avant-porte-exte.webp", "legende": "Fabrication en atelier" },
+            { "etape": "apres", "image": "img/pavillon/apres-porte-exte.webp", "legende": "Porte posée, vue de l'intérieur" }
           ]
         },
         {
           "titre": "Porte intérieure moulurée",
           "texte": "La porte d'origine a été déposée, réparée en atelier par greffes de bois, puis reposée dans sa boiserie.",
           "etapes": [
-            {
-              "etape": "avant",
-              "image": "img/pavillon/avant-porte-inte.webp",
-              "legende": "La porte avant restauration"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/pavillon/pendant-porte-inte.webp",
-              "legende": "Détail d'une greffe de bois"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/pavillon/apres-porte-inte.webp",
-              "legende": "Après réparation, en atelier"
-            },
-            {
-              "etape": "apres",
-              "image": "img/pavillon/porte-inte-repose.webp",
-              "legende": "La porte reposée"
-            }
+            { "etape": "avant", "image": "img/pavillon/avant-porte-inte.webp", "legende": "La porte avant restauration" },
+            { "etape": "pendant", "image": "img/pavillon/pendant-porte-inte.webp", "legende": "Détail d'une greffe de bois" },
+            { "etape": "pendant", "image": "img/pavillon/apres-porte-inte.webp", "legende": "Après réparation, en atelier" },
+            { "etape": "apres", "image": "img/pavillon/porte-inte-repose.webp", "legende": "La porte reposée" }
           ]
         },
         {
           "titre": "Fenêtres à petits bois",
           "texte": "Les châssis anciens ont été repris en atelier puis reposés en façade.",
           "etapes": [
-            {
-              "etape": "avant",
-              "image": "img/pavillon/fenetre-facade-avant.webp",
-              "legende": "La façade avant travaux"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/pavillon/fenetre-facade-pendant.webp",
-              "legende": "Châssis ancien en atelier"
-            },
-            {
-              "etape": "apres",
-              "image": "img/pavillon/fenetre-facade-apres.webp",
-              "legende": "Les fenêtres en façade"
-            }
+            { "etape": "avant", "image": "img/pavillon/fenetre-facade-avant.webp", "legende": "La façade avant travaux" },
+            { "etape": "pendant", "image": "img/pavillon/fenetre-facade-pendant.webp", "legende": "Châssis ancien en atelier" },
+            { "etape": "apres", "image": "img/pavillon/fenetre-facade-apres.webp", "legende": "Les fenêtres en façade" }
           ]
         },
         {
           "titre": "Boiseries intérieures",
           "texte": "Les panneaux dégradés ont été restaurés en atelier, puis les boiseries reposées dans la salle.",
           "etapes": [
-            {
-              "etape": "avant",
-              "image": "img/pavillon/revers-boiserie-inte.webp",
-              "legende": "Revers d'un panneau dégradé"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/pavillon/panneau-moulure-boiserie-inte.webp",
-              "legende": "Panneau mouluré en atelier"
-            },
-            {
-              "etape": "apres",
-              "image": "img/pavillon/boiserie-apres.webp",
-              "legende": "Les boiseries reposées"
-            }
+            { "etape": "avant", "image": "img/pavillon/revers-boiserie-inte.webp", "legende": "Revers d'un panneau dégradé" },
+            { "etape": "pendant", "image": "img/pavillon/panneau-moulure-boiserie-inte.webp", "legende": "Panneau mouluré en atelier" },
+            { "etape": "apres", "image": "img/pavillon/boiserie-apres.webp", "legende": "Les boiseries reposées" }
           ]
         }
       ],
-      "galerie": [],
-      "id": "pavillon-de-la-musique"
+      "galerie": []
     },
     {
+      "id": "eglise-saint-vincent",
       "titre": "Restitution du décor en bois de l'église Saint-Vincent",
       "lieu": "Église Saint-Vincent",
       "commune": "Avanne-Aveney (Doubs)",
@@ -145,33 +86,17 @@
           "titre": "Le décor en bois : balcon, oculi et éléments d'architecture",
           "texte": "De l'état d'origine au décor restitué, en passant par l'atelier : chaque élément a été refabriqué tel que l'architecte Pierre Marnotte l'avait dessiné.",
           "etapes": [
-            {
-              "etape": "avant",
-              "image": "img/stvincent/avant-travaux.webp",
-              "legende": "État d'origine du balcon et des boiseries"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/stvincent/tournage-de-loculus.webp",
-              "legende": "Tournage de l'oculus : mise en forme des moulures au tour à bois"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/stvincent/fabrication-dun-chapiteau.webp",
-              "legende": "Fabrication d'un chapiteau, réalisé en atelier"
-            },
-            {
-              "etape": "apres",
-              "image": "img/stvincent/apres-travaux.webp",
-              "legende": "Le décor en bois restitué : oculi, fronton et croix intégrés à l'ensemble"
-            }
+            { "etape": "avant", "image": "img/stvincent/avant-travaux.webp", "legende": "État d'origine du balcon et des boiseries" },
+            { "etape": "pendant", "image": "img/stvincent/tournage-de-loculus.webp", "legende": "Tournage de l'oculus : mise en forme des moulures au tour à bois" },
+            { "etape": "pendant", "image": "img/stvincent/fabrication-dun-chapiteau.webp", "legende": "Fabrication d'un chapiteau, réalisé en atelier" },
+            { "etape": "apres", "image": "img/stvincent/apres-travaux.webp", "legende": "Le décor en bois restitué : oculi, fronton et croix intégrés à l'ensemble" }
           ]
         }
       ],
-      "galerie": [],
-      "id": "eglise-saint-vincent"
+      "galerie": []
     },
     {
+      "id": "maison-des-orphelins-dole",
       "titre": "La Maison des Orphelins",
       "lieu": "Maison des Orphelins",
       "commune": "Dole (Jura)",
@@ -194,119 +119,46 @@
           "titre": "Boiseries intérieures",
           "texte": "Décapage, restauration et fabrication à neuf des éléments manquants. Avant le décapage, un relevé des couches de peinture (stratigraphie) a mis au jour 7 couches successives.",
           "etapes": [
-            {
-              "etape": "avant",
-              "image": "img/dole/boiserie/avant-travaux.webp",
-              "legende": "La pièce avant travaux"
-            },
-            {
-              "etape": "avant",
-              "image": "img/dole/boiserie/boiserie-origine-avant-decapage.webp",
-              "legende": "Boiserie d'origine, sous ses couches de peinture"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/dole/boiserie/stratigraphie-peinture.webp",
-              "legende": "Stratigraphie : relevé des 7 couches de peinture"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/dole/boiserie/panneaux-fabriques-en-atelier.webp",
-              "legende": "Panneaux fabriqués à neuf en atelier"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/dole/boiserie/pose-des-panneaux-neufs.webp",
-              "legende": "Pose des panneaux neufs à côté des anciens"
-            },
-            {
-              "etape": "apres",
-              "image": "img/dole/boiserie/renovation-et-reconstruction-a-lidentique.webp",
-              "legende": "Rénovation et reconstruction à l'identique"
-            }
+            { "etape": "avant", "image": "img/dole/boiserie/avant-travaux.webp", "legende": "La pièce avant travaux" },
+            { "etape": "avant", "image": "img/dole/boiserie/boiserie-origine-avant-decapage.webp", "legende": "Boiserie d'origine, sous ses couches de peinture" },
+            { "etape": "pendant", "image": "img/dole/boiserie/stratigraphie-peinture.webp", "legende": "Stratigraphie : relevé des 7 couches de peinture" },
+            { "etape": "pendant", "image": "img/dole/boiserie/panneaux-fabriques-en-atelier.webp", "legende": "Panneaux fabriqués à neuf en atelier" },
+            { "etape": "pendant", "image": "img/dole/boiserie/pose-des-panneaux-neufs.webp", "legende": "Pose des panneaux neufs à côté des anciens" },
+            { "etape": "apres", "image": "img/dole/boiserie/renovation-et-reconstruction-a-lidentique.webp", "legende": "Rénovation et reconstruction à l'identique" }
           ]
         },
         {
           "titre": "Les fenêtres des différentes époques",
           "texte": "Restauration de toutes les fenêtres des différentes époques : pose de greffes et remplacement des pièces altérées, mastiquage des vitrages, changement de carreaux en verre soufflé, remise en fonctionnement des quincailleries et pose de joints.",
           "etapes": [
-            {
-              "etape": "avant",
-              "image": "img/dole/fenetre/chassis-anciens-deposes.webp",
-              "legende": "Châssis anciens déposés, à l'atelier"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/dole/fenetre/fenetre-demontee-en-atelier.webp",
-              "legende": "Fenêtre démontée, prête à être assemblée"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/dole/fenetre/collage-et-serrage-a-letabli.webp",
-              "legende": "Collage et serrage des pièces à l'établi"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/dole/fenetre/fenetre-restauree-en-atelier.webp",
-              "legende": "Fenêtre restaurée, prête à la pose"
-            },
-            {
-              "etape": "apres",
-              "image": "img/dole/fenetre/fenetre-replacee-en-facade.webp",
-              "legende": "Fenêtre restaurée et replacée en façade"
-            }
+            { "etape": "avant", "image": "img/dole/fenetre/chassis-anciens-deposes.webp", "legende": "Châssis anciens déposés, à l'atelier" },
+            { "etape": "pendant", "image": "img/dole/fenetre/fenetre-demontee-en-atelier.webp", "legende": "Fenêtre démontée, prête à être assemblée" },
+            { "etape": "pendant", "image": "img/dole/fenetre/collage-et-serrage-a-letabli.webp", "legende": "Collage et serrage des pièces à l'établi" },
+            { "etape": "pendant", "image": "img/dole/fenetre/fenetre-restauree-en-atelier.webp", "legende": "Fenêtre restaurée, prête à la pose" },
+            { "etape": "apres", "image": "img/dole/fenetre/fenetre-replacee-en-facade.webp", "legende": "Fenêtre restaurée et replacée en façade" }
           ]
         },
         {
           "titre": "Le plancher",
           "texte": "Dépose des lames dégradées, reprise des appuis et repose de lames en bois, dans le respect de l'existant.",
           "etapes": [
-            {
-              "etape": "pendant",
-              "image": "img/dole/plancher/plancher-avant.webp",
-              "legende": "Pendant la restauration : lames dégradées déposées"
-            },
-            {
-              "etape": "apres",
-              "image": "img/dole/plancher/plancher-apres.webp",
-              "legende": "Après restauration"
-            }
+            { "etape": "pendant", "image": "img/dole/plancher/plancher-avant.webp", "legende": "Pendant la restauration : lames dégradées déposées" },
+            { "etape": "apres", "image": "img/dole/plancher/plancher-apres.webp", "legende": "Après restauration" }
           ]
         }
       ],
       "galerie": [
-        {
-          "image": "img/dole/fenetre/facades-cour-interieure.webp",
-          "legende": "Les fenêtres restaurées, dans la cour"
-        },
-        {
-          "image": "img/dole/fenetre/chassis-en-cours-dassemblage.webp",
-          "legende": "Châssis en cours d'assemblage"
-        },
-        {
-          "image": "img/dole/boiserie/panneaux-origine-et-bas-neufs.webp",
-          "legende": "Panneaux d'origine et parties basses neuves"
-        },
-        {
-          "image": "img/dole/boiserie/panneaux-bas-refaits-a-neuf.webp",
-          "legende": "Panneaux bas refaits à neuf"
-        },
-        {
-          "image": "img/dole/boiserie/raccord-ancien-et-neuf.webp",
-          "legende": "Raccord entre boiserie ancienne et éléments neufs"
-        },
-        {
-          "image": "img/dole/boiserie/habillage-de-porte.webp",
-          "legende": "Habillage de porte restauré"
-        },
-        {
-          "image": "img/dole/boiserie/chantier-en-cours.webp",
-          "legende": "Le chantier en cours"
-        }
-      ],
-      "id": "maison-des-orphelins-dole"
+        { "image": "img/dole/fenetre/facades-cour-interieure.webp", "legende": "Les fenêtres restaurées, dans la cour" },
+        { "image": "img/dole/fenetre/chassis-en-cours-dassemblage.webp", "legende": "Châssis en cours d'assemblage" },
+        { "image": "img/dole/boiserie/panneaux-origine-et-bas-neufs.webp", "legende": "Panneaux d'origine et parties basses neuves" },
+        { "image": "img/dole/boiserie/panneaux-bas-refaits-a-neuf.webp", "legende": "Panneaux bas refaits à neuf" },
+        { "image": "img/dole/boiserie/raccord-ancien-et-neuf.webp", "legende": "Raccord entre boiserie ancienne et éléments neufs" },
+        { "image": "img/dole/boiserie/habillage-de-porte.webp", "legende": "Habillage de porte restauré" },
+        { "image": "img/dole/boiserie/chantier-en-cours.webp", "legende": "Le chantier en cours" }
+      ]
     },
     {
+      "id": "villers-sous-chalamont",
       "titre": "Boiseries de la chapelle Notre-Dame-des-Bois",
       "lieu": "Chapelle Notre-Dame-des-Bois",
       "commune": "Villers-sous-Chalamont (Doubs)",
@@ -325,43 +177,19 @@
           "titre": "Les boiseries de la chapelle",
           "texte": "Du chantier au panneau fini : dépose, greffes et assemblages en atelier, puis repose.",
           "etapes": [
-            {
-              "etape": "avant",
-              "image": "img/villers/avant.webp",
-              "legende": "Les boiseries avant restauration"
-            },
-            {
-              "etape": "avant",
-              "image": "img/villers/atelier.webp",
-              "legende": "Pièces dégradées, déposées à l'atelier"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/villers/pendant.webp",
-              "legende": "Les panneaux en atelier"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/villers/atelier-2.webp",
-              "legende": "Préparation des greffes, panneau par panneau"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/villers/assemblage-queue-daronde-chevillee.webp",
-              "legende": "Assemblage à clef en queue d'aronde, chevillé"
-            },
-            {
-              "etape": "apres",
-              "image": "img/villers/apres.webp",
-              "legende": "Les boiseries après repose"
-            }
+            { "etape": "avant", "image": "img/villers/avant.webp", "legende": "Les boiseries avant restauration" },
+            { "etape": "avant", "image": "img/villers/atelier.webp", "legende": "Pièces dégradées, déposées à l'atelier" },
+            { "etape": "pendant", "image": "img/villers/pendant.webp", "legende": "Les panneaux en atelier" },
+            { "etape": "pendant", "image": "img/villers/atelier-2.webp", "legende": "Préparation des greffes, panneau par panneau" },
+            { "etape": "pendant", "image": "img/villers/assemblage-queue-daronde-chevillee.webp", "legende": "Assemblage à clef en queue d'aronde, chevillé" },
+            { "etape": "apres", "image": "img/villers/apres.webp", "legende": "Les boiseries après repose" }
           ]
         }
       ],
-      "galerie": [],
-      "id": "villers-sous-chalamont"
+      "galerie": []
     },
     {
+      "id": "moulin-de-pont-des-vents",
       "titre": "La porte du Moulin de Pont des Vents",
       "lieu": "Moulin de Pont des Vents",
       "commune": "Montfleur (Jura)",
@@ -381,41 +209,16 @@
           "titre": "Une porte en planches croisées",
           "texte": "Du calepinage des planches à la pose : toutes les étapes de la fabrication.",
           "etapes": [
-            {
-              "etape": "pendant",
-              "image": "img/moulinmontfleur/calepinage-planche.webp",
-              "legende": "Calepinage des planches croisées"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/moulinmontfleur/clouage-en-atelier.webp",
-              "legende": "Clouage en atelier"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/moulinmontfleur/detail-des-clous.webp",
-              "legende": "Détail des clous"
-            },
-            {
-              "etape": "pendant",
-              "image": "img/moulinmontfleur/mise-en-place-des-fixations.webp",
-              "legende": "Mise en place des fixations"
-            },
-            {
-              "etape": "apres",
-              "image": "img/moulinmontfleur/porte-posee-vue-exte.webp",
-              "legende": "Porte posée, vue extérieure"
-            },
-            {
-              "etape": "apres",
-              "image": "img/moulinmontfleur/porte-posee-vue-inte.webp",
-              "legende": "Porte posée, vue intérieure"
-            }
+            { "etape": "pendant", "image": "img/moulinmontfleur/calepinage-planche.webp", "legende": "Calepinage des planches croisées" },
+            { "etape": "pendant", "image": "img/moulinmontfleur/clouage-en-atelier.webp", "legende": "Clouage en atelier" },
+            { "etape": "pendant", "image": "img/moulinmontfleur/detail-des-clous.webp", "legende": "Détail des clous" },
+            { "etape": "pendant", "image": "img/moulinmontfleur/mise-en-place-des-fixations.webp", "legende": "Mise en place des fixations" },
+            { "etape": "apres", "image": "img/moulinmontfleur/porte-posee-vue-exte.webp", "legende": "Porte posée, vue extérieure" },
+            { "etape": "apres", "image": "img/moulinmontfleur/porte-posee-vue-inte.webp", "legende": "Porte posée, vue intérieure" }
           ]
         }
       ],
-      "galerie": [],
-      "id": "moulin-de-pont-des-vents"
+      "galerie": []
     }
   ]
 }

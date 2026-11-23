@@ -2,20 +2,32 @@
   "titre": "Florent Martin, menuisier-ébéniste.",
   "etapes": [
     {
-      "titre": "Menuiserie et ébénisterie",
-      "texte": "Formation et expérience aux métiers du bois : menuiserie, ébénisterie et techniques d'assemblage traditionnelles.",
+      "titre": "Formation aux métiers d'art",
+      "texte": "CAP ébénisterie, CAP tournerie d'art, BMA (Brevet des Métiers d'Art) option ébénisterie, puis DMA (Diplôme des Métiers d'Art) option décors et mobilier. Formation complémentaire en dessin assisté par ordinateur (DAO-CAO), option architecture.",
       "lien_texte": "",
       "lien_url": ""
     },
     {
-      "titre": "En collaboration avec Philippe Bulle",
-      "texte": "Travail en collaboration avec Philippe Bulle, maître menuisier d'art spécialisé dans la restauration des monuments historiques.",
+      "titre": "2006 – 2010 · Premières expériences",
+      "texte": "Menuiserie, fabrication, pose et travaux techniques. Chef d'équipe chez EC2STAND en 2008, pour la fabrication et le montage de stands, puis chargé d'affaires au sein de l'entreprise Myotte, à Orchamps-Vennes, de 2009 à 2010.",
+      "lien_texte": "",
+      "lien_url": ""
+    },
+    {
+      "titre": "Depuis 2010 · MT2M",
+      "texte": "Création de MT2M en octobre 2010, avec une spécialisation progressive dans la restauration du patrimoine bâti et des menuiseries anciennes. Plus de 20 ans d'expérience dans les métiers du bois.",
+      "lien_texte": "",
+      "lien_url": ""
+    },
+    {
+      "titre": "Collaboration avec Philippe Bulle",
+      "texte": "Collaboration ponctuelle avec Philippe Bulle, maître menuisier d'art spécialisé dans la restauration des monuments historiques, notamment sur la cathédrale Saint-Jean de Besançon, le château de Moncley, la Maison des Orphelins à Dole, l'église de Bannans, la chapelle Notre-Dame du Refuge à Besançon et le château de Fertans.",
       "lien_texte": "Philippe Bulle",
       "lien_url": "https://www.philippe-bulle.fr/"
     },
     {
-      "titre": "La création de MT2M",
-      "texte": "Installation de l'atelier à Avanne-Aveney, près de Besançon, et chantiers de restauration dans toute la Bourgogne-Franche-Comté.",
+      "titre": "Formation continue",
+      "texte": "2020 : histoire et restauration des menuiseries anciennes, à Rennes. 2023 : techniques de soudage, pour la restauration et l'adaptation des ferrures anciennes.",
       "lien_texte": "",
       "lien_url": ""
     }
