@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Variables du template : {{demande}} {{nom}} {{email}} {{telephone}} {{commune}} {{message}} {{date}}
 // Si les clés sont vides, le formulaire ouvre la messagerie du visiteur (rien ne se perd).
 (function () {
-  const EMAILJS_PUBLIC_KEY  = 'DPoF-GpESG1a4iCuR';
-  const EMAILJS_SERVICE_ID  = 'service_62a371d';
-  const EMAILJS_TEMPLATE_ID = 'template_afhmvcg';
+  const EMAILJS_PUBLIC_KEY  = '6UGo377_ymCKmYMxR';
+  const EMAILJS_SERVICE_ID  = 'service_5ar1p2i';
+  const EMAILJS_TEMPLATE_ID = 'template_z4n5t2m';
 
   const form     = document.getElementById('contact-form');
   if (!form) return;
